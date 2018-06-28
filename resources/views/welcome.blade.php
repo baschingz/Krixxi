@@ -26,21 +26,31 @@
 		margin-left:20%;
 		margin-top:12%;
 		margin-right:20%;
-		color:#ABEBC6;
+		color:#F9FAF9;
 		}
 
 		.font2{
 		font-size:50px;
 		margin-left:20%;
-		color:#DAF7A6;
+		color:#F9FAF9;
 		}
 
         </style>
     </head>
     <body>
-        <div class="font1">Krixxi </div>
-		<div class="font2">keep memory</div>
+        <div id="div1" class="font1" hidden>Krixxi </div>
+		<div id="div2" class="font2" hidden>keep memory</div>
         @yield('body')
     </body>
          @yield('script')
+		<script>
+			$(function(){
+			
+			$('#div1').slideDown("slow");
+			$('#div2').slideDown("slow");
+
+			});		
+		</script>
 </html>
+
+
