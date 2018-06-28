@@ -8,13 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class PhotographerModel extends Model
 {
-    //protected $table = 'Photographer';  //รอ create DB
+    protected $table = 'Photographer';  
 
     public function getPhotographerList()
 	{
         try
 		{
-            
+            $photolist = PhotographerModel::all();
+			return $photolist;
         }
         catch(\Exception $ex)
 		{
@@ -33,7 +34,6 @@ class PhotographerModel extends Model
 		{
             return $ex;
         }
-
     }
 
 	public function getPhotographerByName($keyword)

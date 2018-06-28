@@ -8,9 +8,12 @@ use App\Model\PhotographerModel;
 
 class  PhotographerController extends Controller
 {
+	
     public function getPhotographerList()
 	{
-        
+        $photoModel = new PhotographerModel();
+		$photolist = $photoModel->getPhotographerList();
+		return view('Photographer.photographerList', compact('$photolist'));
     }
 
 	 public function getPhotographerById($id)
@@ -28,3 +31,5 @@ class  PhotographerController extends Controller
 	
 	}
 }
+
+?>
