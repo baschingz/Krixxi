@@ -15,4 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('list', 'PhotographerController@getPhotographerList');
+Route::get('list', function(){
+    return view('layout.index');
+});
+
+Route::get('photographerlist', 'PhotographerController@getPhotographerList');
+
