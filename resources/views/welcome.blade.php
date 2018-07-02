@@ -8,10 +8,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
 		<!-- Latest compiled and minified CSS -->			
         <title>Krixxi</title>
-
+		
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 	    <link rel="stylesheet" type="text/css" href="{{asset('css/background.css')}}"/> 
+		
     </head>
     <body>
 		
