@@ -9,22 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-/* 
-body, html {
-  height: 100%;
-}
-.bg {
-  /* The image used */
-  background-image: url("{{assets('image/co')}}");
 
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 body {
   margin: 0;
 }
@@ -1102,7 +1087,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  
 }
 input,
 button,
