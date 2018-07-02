@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+		
 		<!-- Latest compiled and minified CSS -->			
         <title>Krixxi</title>
 		
@@ -13,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 	    <link rel="stylesheet" type="text/css" href="{{asset('css/background.css')}}"/> 
 		<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/> 
+		<link rel="stylesheet" type="text/css" href="{{asset('css/docs.min.css')}}"/>
+		
     </head>
     <body>
 		
@@ -20,7 +23,7 @@
 		        
 		<div id="login" hidden>
 		<div class="container">    
-        <div id="loginbox" style="margin-top:50px; opacity: 0.7;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+        <div id="loginbox" style="margin-top:50px; opacity: 0.8;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
@@ -58,7 +61,7 @@
                                     <!-- Button -->
 
                                     <div class="col-sm-12 controls">
-                                      <a id="btn-login" href="#" class="btn btn-success">Login  </a>
+                                      <a id="btn-login" href="menu" class="btn btn-success">Login  </a>
                                       <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
 
                                     </div>

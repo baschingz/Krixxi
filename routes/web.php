@@ -19,5 +19,7 @@ Route::get('list', function(){
     return view('layout.main');
 });
 
-
+Route::get('menu', function(){
+    return view('Menu.MenuList');
+});
 
