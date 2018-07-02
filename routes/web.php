@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('list', function(){
-    return view('layout.index');
+    return view('layout.main');
 });
 
 Route::get('photographerlist', 'PhotographerController@getPhotographerList');

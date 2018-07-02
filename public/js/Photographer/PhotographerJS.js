@@ -4,25 +4,7 @@ var app = angular.module('myApp', [], function ($interpolateProvider) {
 });
 app.controller('PhotographerController', function ($scope, $http) {
     $scope.photographers = typeof photographers !== "undefined" ? photographers ? photographers : null : null;
-    $scope.photographer = {
-        pgid:'',
-        fullname:'',
-        tel:'',
-        old:''
-    }
-//    $scope.getPhotographerList = function () {
-//        $http({
-//            method: 'GET',
-//            url: 'photographerlist'
-//        }).then(
-//                function (response) {
-//                    $scope.photographers = response.data;
-//                    return view('layout.index');
-//                }, function (response) {
-//
-//        }
-//        );
-//    }
+    $scope.photographer = typeof photographer !== "undefined" ? photographer ? photographer : null : null;
 
     $scope.init = function (page) {
         page = page || null;
@@ -31,4 +13,16 @@ app.controller('PhotographerController', function ($scope, $http) {
 
         }, 0);
     };
+});
+
+var card = angular.module('cardDemo1', ['ngMaterial']);
+
+card.controller('AppCtrl', function($scope) {
+  $scope.imagePath = 'img/washedout.png';
+})
+.config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('dark-grey').backgroundPalette('grey').dark();
+  $mdThemingProvider.theme('dark-orange').backgroundPalette('orange').dark();
+  $mdThemingProvider.theme('dark-purple').backgroundPalette('deep-purple').dark();
+  $mdThemingProvider.theme('dark-blue').backgroundPalette('blue').dark();
 });

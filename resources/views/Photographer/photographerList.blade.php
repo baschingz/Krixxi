@@ -1,7 +1,9 @@
 @extends('layout.index')
 @section('body')
 <div ng-init="init()" ng-controller="PhotographerController">
-    <% photographer %>
+
+   
+
 </div>
 @stop
 
