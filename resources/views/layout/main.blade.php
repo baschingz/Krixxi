@@ -5,9 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Krixxi</title>
+<<<<<<< HEAD:resources/views/layout/main.blade.php
         <!-- Fonts -->        
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('public/css/background.css') }}" >
+=======
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+>>>>>>> 8a862f4fe0a2e8f1a316cfbb726fcffa0986892b:resources/views/layout/index.blade.php
         <!-- Styles -->
         <style>
             .font1{
