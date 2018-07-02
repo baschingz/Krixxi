@@ -16,15 +16,11 @@
     </head>
     <body>
 		
-        <div id="div1" class="font1" hidden>Krixxi </div>
-		<div id="div2" class="font2" hidden>keep memory</div>
-		<div>
-		<button id="bnt1" type="button" class="btn btn1 btn-warning">get start</button>
-		</div>
-        
+        <div id="div1" style="background-color:#85C1E9; font-size:120px; text-align:center; margin-top:20%; opacity: 0.7;" hidden>Krixxi </div>
+		        
 		<div id="login" hidden>
 		<div class="container">    
-        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+        <div id="loginbox" style="margin-top:50px; opacity: 0.7;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
@@ -167,12 +163,10 @@
 		<script>
 			$(function(){			
 			$('#div1').slideDown("slow");
-			$('#div2').slideDown("slow");
 			
-			$('#bnt1').click(function(){
+			
+			$('#div1').click(function(){
 				$('#div1').hide( "slow" );
-				$('#div2').hide( "slow" );
-				$('#bnt1').hide( "slow" );
 				$('#login').slideDown("slow");
 			});
 			});		
