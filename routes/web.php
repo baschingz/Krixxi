@@ -20,6 +20,6 @@ Route::get('list', function(){
 });
 
 Route::get('menu', function(){
-    return view('Menu.MenuList');
+    return view('menu.MenuList');
 });
 

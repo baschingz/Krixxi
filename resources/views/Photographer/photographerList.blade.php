@@ -1,4 +1,4 @@
-@extends('layout.index')
+@extends('layout.main')
 @section('body')
 <div ng-init="init()" ng-controller="PhotographerController">
 

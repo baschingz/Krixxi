@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{{asset('css/background.css')}}"/> 
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/> 
-        <link rel="stylesheet" type="text/css" href="{{asset('css/docs.min.css')}}"/>
+       
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
         <!-- Styles -->
         
@@ -24,10 +24,11 @@
         <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
         <li><a class="glyphicon glyphicon-user" href="#"></a></li>
         <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
-        <li><a class="glyphicon glyphicon-pushpin" href="#"></a></li>
+        <li><a class="glyphicon glyphicon-search" href="#"></a></li>
         </ul>
     </div>
     </nav>
+    <br>
         @yield('body')
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
