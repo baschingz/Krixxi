@@ -25,7 +25,11 @@
            <div class="col-md-4 col-md-offset-2" style="margin-top:5%; color:white;">
             <div style="font-size:80px; Opacity: 0.8;">Krixxi</div>
             <div style="font-size:30px; Opacity: 0.8; margin-top: -3%;">Keep memory</div>
+<<<<<<< HEAD
             <a class="btn btn-info" href="menu">Get Start</a>
+=======
+            <a href="menu"><button type="button" href="menu" class="btn btn-info">Get Start</button></a>
+>>>>>>> 2018e8909a910cafa954a3bfe974c6914bc8f57a
              </div>
             <div class="col-md-4">
             <div id="loginbox" style="opacity: 0.8;" class="mainbox">                    

@@ -18,6 +18,7 @@
         <!-- Styles -->
         @yield('import')
     </head>
+<<<<<<< HEAD
     <body >      
     <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -29,6 +30,24 @@
         </ul>
     </div>
     </nav>
+=======
+    <body >
+    <header style="margin-bottom:50px;">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="menu">Krixxi</a>
+            </div>
+            <ul class="nav navbar-nav">
+            <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
+            <li><a class="glyphicon glyphicon-user" href="#"></a></li>
+            <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
+            <li><a class="glyphicon glyphicon-search" href="search"></a></li>
+            </ul>
+        </div>
+    </nav>
+    
+>>>>>>> 2018e8909a910cafa954a3bfe974c6914bc8f57a
     </header>      
    
     <br>
@@ -36,7 +55,7 @@
         
         @yield('body')
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/i18n/datepicker.th-TH.js"></script>
+       
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
