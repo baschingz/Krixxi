@@ -1,8 +1,11 @@
 @extends('layout.main')
 @section('body')
 
-<div class="container-fluid">
-
+<div>
+    
+</div>
+<div class="container">
+fsdfd
 
 
 </div>

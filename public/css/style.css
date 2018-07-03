@@ -14,6 +14,11 @@ html {
     border-top: 10px solid rgb(19, 198, 230);
   }
 
+  .carousel-slide{
+    width: 100%;
+    height: 20px;
+  }
+
 .font1{
   color:#F9FAF9;
   font-size:12em;  
@@ -45,7 +50,6 @@ html {
   width: 70%;
 }
 
-.
 
 
 
