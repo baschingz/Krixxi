@@ -2632,6 +2632,18 @@ input[type="search"] {
 .form-group {
   margin-bottom: 15px;
 }
+
+.form-center1{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-center{
+
+  display: flex;
+  justify-content: center;
+}
 .radio,
 .checkbox {
   position: relative;
