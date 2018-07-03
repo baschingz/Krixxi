@@ -28,6 +28,7 @@
             <a href="menu"><button type="button" href="menu" class="btn btn-info">Get Start</button></a>
              </div>
             <div class="col-md-4">
+            <div style="margin-top:5%;"></div>
             <div id="loginbox" style="opacity: 0.8;" class="mainbox">                    
             <div class="panel panel-info" >
                     <div class="panel-heading">

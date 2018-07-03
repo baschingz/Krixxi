@@ -18,6 +18,19 @@
         <!-- Styles -->
         @yield('import')
     </head>
+<<<<<<< HEAD
+    <body >      
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav nav-center">
+        <li><a class="glyphicon glyphicon-th-large" href="menu"></a></li>
+        <li><a class="glyphicon glyphicon-user" href="#"></a></li>
+        <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
+        <li><a class="glyphicon glyphicon-pushpin" href="#"></a></li>
+        </ul>
+    </div>
+    </nav>
+=======
     <body >
     <header style="margin-bottom:50px;">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -34,6 +47,7 @@
         </div>
     </nav>
     
+>>>>>>> 2018e8909a910cafa954a3bfe974c6914bc8f57a
     </header>      
    
     <br>
