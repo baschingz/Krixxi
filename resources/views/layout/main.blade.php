@@ -14,7 +14,8 @@
         <!-- Styles -->
         
     </head>
-    <body >      
+    <body >
+    <header style="margin-bottom:50px;">
     <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -28,7 +29,9 @@
         </ul>
     </div>
     </nav>
-    <br>
+    
+    </header>      
+   
         @yield('body')
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>

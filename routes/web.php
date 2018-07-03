@@ -23,3 +23,9 @@ Route::get('menu', function(){
     return view('menu.MenuList');
 });
 
+Route::get('search', function(){
+    return view('search.search');
+});
+
+
+
