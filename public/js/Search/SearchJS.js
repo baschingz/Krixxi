@@ -1,4 +1,3 @@
-
 var app = angular.module('myApp', [], function ($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
@@ -6,17 +5,16 @@ var app = angular.module('myApp', [], function ($interpolateProvider) {
 
 app.controller('SearchController',function($scope, $http){
 
-// $scope.searchValue = typeof searchValue !== "undefined" ? searchValue ? searchValue : null : null;
+$scope.photographyList = typeof searchValue !== "undefined" ? searchValue ? searchValue : null : null;
 $scope.searchValue={
     location:'',
     rate:'',
     service:'',
     date:''
 }
-
-    $scope.searchPG = function(e){
+$scope.searchPG = function(e){
         debugger;
-        alert('hi');
+        alert(e.location+e.rate+e.service+e.date);
         //ส่งไปเช็ค backend
     };
 
@@ -25,5 +23,4 @@ $scope.searchValue={
 
 $(function(){
     $('#search').slideDown("slow");
-
 });

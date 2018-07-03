@@ -3,6 +3,9 @@
 
 @endsection
 @section('body')
+
+<div ng-controller="SearchController">
+    <div ng-form ng-init="init()">
 <div class="containerSearch col-sm-10 col-sm-offset-1" hidden id="search" >
     <div class="panelSearch" >
         <div class="panel-headingSearch form-center font-topic">ค้นหา</div>
@@ -58,6 +61,8 @@
                 </button>
             </div>
         </div>
+    </div>
+</div>
     </div>
 </div>
 @endsection
