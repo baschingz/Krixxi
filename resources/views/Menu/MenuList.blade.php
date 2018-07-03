@@ -8,26 +8,56 @@
 
 <div ng-controller="MenuController" ng-init="init()" id="init" >    
     <script src="jssor.slider.min.js"></script>
-        <div id="jssor_1" style="position:relative;top:0px;left:0px;width:100%;height:380px;overflow:hidden;">
-        <div data-u="slides" style="position:absolute;top:0px;left:0px;width:100%;height:380px;overflow:hidden;">
-        <div ng-repeat="p in photographers">    
-        <div  class="mySlides" ><img src='<% p.img_base64 %>' data-u="image" width="70%"  > </div>
-        </div>                               
-        </div>                                
-</div>
-<script>
-    var options = { $AutoPlay: 1 };
-    var jssor_1_slider = new $JssorSlider$("jssor_1", options);
-</script>
+        <div id="jssor_1" class="slide-index1">
+            <div data-u="slides" class="slide-index2">
+                <div ng-repeat="p in photographers">    
+                    <div  class="mySlides" >
+                        <img src='<% p.img_base64 %>' data-u="image" width="100%"  > 
+                    </div>
+                </div>     
+                                     
+            </div>                                
+    </div>
 
+    <script>
+        var options = { $AutoPlay: 1 };
+        var jssor_1_slider = new $JssorSlider$("jssor_1", options);
+    </script>
 </div>
-
 
 <div class="container">
+   <div class="row">
+        <div class="col-sm-6 card">
+            <img src="{{asset('image/menu/date.jpg')}}" class="img-size">
+            <div class="container">
+                <h4><b>John Doe</b></h4>     
+            </div>
+        </div>
 
+         <div class="col-sm-6 card">
+            <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-size">
+            <div class="container">
+                <h4><b>John Doe</b></h4>     
+            </div>
+        </div>
 
+         <div class="col-sm-6 card">
+            <img src="{{asset('image/menu/promotion.jpg')}}"  class="img-size">
+            <div class="container">
+                <h4><b>John Doe</b></h4>     
+            </div>
+        </div>
 
+         <div class="col-sm-6 card">
+            <img src="{{asset('image/menu/photographer.jpg')}}" class="img-size">
+            <div class="container">
+                <h4><b>John Doe</b></h4>     
+            </div>
+        </div>
+   </div>        
 </div>
+
+
 @endsection
 
 @section('script')
