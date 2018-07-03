@@ -32,15 +32,12 @@
             </ul>
         </div>
     </nav>
-<<<<<<< HEAD
     
     </header>      
    
-=======
     <br>
 
 
->>>>>>> 248cf1f471c13566d1d4edf09450e8c96ca19f70
         @yield('body')
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
