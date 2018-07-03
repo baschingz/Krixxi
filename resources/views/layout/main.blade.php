@@ -25,12 +25,12 @@
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
             </div>
-            <ul class="nav navbar-nav">
-            <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
+            <!-- <ul class="nav navbar-nav">
+            <li><a class="glyphicon glyphicon-th-large" href="menu"></a></li>
             <li><a class="glyphicon glyphicon-user" href="#"></a></li>
             <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
     
@@ -40,7 +40,9 @@
     <nav>
     @yield('body')
     </nav> 
-     <footer></footer>   
+     <footer>
+
+     </footer>   
       
         
        
