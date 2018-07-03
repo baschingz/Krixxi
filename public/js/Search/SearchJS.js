@@ -14,8 +14,18 @@ $scope.searchValue={
 }
 $scope.searchPG = function(e){
         debugger;
-        alert(e.location+e.rate+e.service+e.date);
+        // alert(e.location+e.rate+e.service+e.date);
         //ส่งไปเช็ค backend
+        var path = base_path +'/photolist/search';   
+        $http.get(path).then(function(response)
+    {
+
+    },
+    function(response)
+    {
+        alert('fail');
+    }
+    );
     };
 
 

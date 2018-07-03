@@ -29,5 +29,6 @@ Route::get('search', function(){
 
 Route::get('imglist', 'ImageController@getImageList');
 
+Route::get('photolist/search', 'PhotographerController@getPhotographerBySearch($keyword)');
 
 
