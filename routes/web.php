@@ -27,5 +27,7 @@ Route::get('search', function(){
     return view('search.search');
 });
 
+Route::get('imglist', 'ImageController@getImageList');
+
 
 
