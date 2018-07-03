@@ -4,11 +4,13 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
   }
 
   .panelSearch {
     margin-bottom: 20px;
-    background-color:#eeeeeecf;
+    background-color:#eeeeeeec;
     border: 1px solid transparent;
     border-color: #333;
     border-radius: 4px;
@@ -21,7 +23,8 @@ html {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   color: #f5f5f5; 
-  background-color: #337ab7a8; 
+  background: #337ab7a8;
+  height: 60px;
   border-color: #333;
 }
 
@@ -59,10 +62,10 @@ html {
 }
 
 .containerSearch {
-  padding-right: 5px;
-  padding-left: 5px;
-  margin-right: 80px;
-  margin-left: 80px;
+  background-size: cover;
+  padding-right:2em;
+  padding-left: 2em;
+  width: 100%;
 }
 
 
@@ -82,3 +85,12 @@ html {
     opacity: 0.7;
     } */
 
+.background-size-cover{
+  background-size: cover;
+}
+
+.font-topic{
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 0.7em;
+}
