@@ -1,24 +1,25 @@
 
-var app1 = angular.module('myApp', [], function ($interpolateProvider) {
+var app = angular.module('myApp', [], function ($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
 
-app1.controller('SearchController', function($scope, $http){
+app.controller('SearchController',function($scope, $http){
 
-$scope.searchValue = typeof searchValue !== "undefined" ? searchValue ? searchValue : null : null;
+// $scope.searchValue = typeof searchValue !== "undefined" ? searchValue ? searchValue : null : null;
+$scope.searchValue={
+    location:'',
+    rate:'',
+    service:'',
+    date:''
+}
 
-
-    $scope.search = function(e){
+    $scope.searchPG = function(e){
+        debugger;
         alert('hi');
         //ส่งไปเช็ค backend
     };
 
-    $scope.init = function (page) {
-        debugger;
-        page = page || null;
-        alert('hi');
-    };
 
 });
 
