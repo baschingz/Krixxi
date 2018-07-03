@@ -20,6 +20,14 @@ Route::get('list', function(){
 });
 
 Route::get('menu', function(){
-    return view('Menu.MenuList');
+    return view('menu.MenuList');
 });
+
+Route::get('search', function(){
+    return view('search.search');
+});
+
+Route::get('imglist', 'ImageController@getImageList');
+
+
 
