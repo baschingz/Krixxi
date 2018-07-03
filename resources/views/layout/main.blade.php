@@ -8,7 +8,6 @@
 
         <link rel="icon" href="{{asset('image/icon/Icon-20.png')}}" type="image/x-icon" />
         <!-- Fonts -->        
-        <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
         <link rel="stylesheet" type="text/css" href="{{asset('css/background.css')}}"/> 
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
         
@@ -19,7 +18,7 @@
     </head>
     <body >
     <header style="margin-bottom:50px;">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
@@ -31,7 +30,7 @@
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     
     </header>      
    
@@ -40,7 +39,7 @@
         
         @yield('body')
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/i18n/datepicker.th-TH.js"></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
