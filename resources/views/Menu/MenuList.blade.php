@@ -11,7 +11,7 @@
         <div id="jssor_1" style="position:relative;top:0px;left:0px;width:100%;height:380px;overflow:hidden;">
         <div data-u="slides" style="position:absolute;top:0px;left:0px;width:100%;height:380px;overflow:hidden;">
         <div ng-repeat="p in photographers">    
-        <div  class="mySlides" ><img src='<% p.img_base64 %>' data-u="image" width="70%"  > </div>
+        <div  class="mySlides" ><img src='<% p.img_base64 %>' data-u="image" width="70%"  height="500px"> </div>
         </div>                               
         </div>                                
 </div>

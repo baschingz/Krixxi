@@ -20,7 +20,7 @@
     </head>
     <body >
     <header style="margin-bottom:50px;">
-    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
@@ -32,7 +32,7 @@
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
             </ul>
         </div>
-    </nav> -->
+    </nav>
     
     </header>      
    
