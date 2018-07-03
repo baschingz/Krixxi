@@ -25,21 +25,30 @@
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
             </div>
+<<<<<<< HEAD
             <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
             <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
+=======
+            <!-- <ul class="nav navbar-nav">
+            <li><a class="glyphicon glyphicon-th-large" href="menu"></a></li>
+>>>>>>> 013bd187dbe09f030c45ade88c06e1a83235f8d9
             <li><a class="glyphicon glyphicon-user" href="#"></a></li>
             <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
     
     </header>      
-   
+  
     <br>
-        
-        
-        @yield('body')
+    <nav>
+    @yield('body')
+    </nav> 
+     <footer>
+
+     </footer>   
+      
         
        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 	    <link rel="stylesheet" type="text/css" href="{{asset('css/background.css')}}"/> 
 		<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/> 
-		<link rel="stylesheet" type="text/css" href="{{asset('css/docs.min.css')}}"/>
+		<!-- <link rel="stylesheet" type="text/css" href="{{asset('css/docs.min.css')}}"/> -->
 		
     </head>
     <body>
@@ -55,9 +55,15 @@
                                 
                             <div class="input-group">
                                       <div class="checkbox">
+<<<<<<< HEAD
                                         <label><input id="login-remember" type="checkbox" name="remember" value="1">Remember me</label>
+=======
+                                        <span style="width:0%; max-width: 100%; padding-left: 20px; margin-bottom:10px;">
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </span>
+>>>>>>> 013bd187dbe09f030c45ade88c06e1a83235f8d9
                                       </div>
-                                    </div>
+                        	</div>
 
 
                                 <div style="margin-top:10px" class="form-group">

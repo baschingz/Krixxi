@@ -30,6 +30,10 @@ class PhotographerController extends Controller {
         
     }
 
+    public function getPhotographerBySearch($keyword) {
+        
+    }
+
 }
 
 ?>
