@@ -25,14 +25,14 @@
            <div class="col-md-4 col-md-offset-2" style="margin-top:5%; color:white;">
             <div style="font-size:80px; Opacity: 0.8;">Krixxi</div>
             <div style="font-size:30px; Opacity: 0.8; margin-top: -3%;">Keep memory</div>
-            <a href="menu"><button type="button" href="menu" class="btn btn-info">Get Start</button></a>
+            <a href="menu" class="btn btn-info">Get Start</a>
              </div>
             <div class="col-md-4">
-            <div style="margin-top:5%;"></div>
+            <div style="margin-top:7%;"></div>
             <div id="loginbox" style="opacity: 0.8;" class="mainbox">                    
             <div class="panel panel-info" >
                     <div class="panel-heading">
-                        <div class="panel-title" style="margin-left:40%; margin-right:40%;">Sign In</div>
+                        <div class="panel-title" style="text-align:center;">Sign In</div>
                     </div>     
 
                     <div style="padding-top:30px" class="panel-body" >
@@ -55,9 +55,7 @@
                                 
                             <div class="input-group">
                                       <div class="checkbox">
-                                        <label>
-                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
-                                        </label>
+                                        <label><input id="login-remember" type="checkbox" name="remember" value="1">Remember me</label>
                                       </div>
                                     </div>
 
