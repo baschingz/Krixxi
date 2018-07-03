@@ -11,14 +11,15 @@ class PhotographerController extends Controller {
     public function getPhotographerList() {
         $photoModel = new PhotographerModel();
         $photolist = $photoModel->getPhotographerList();
-        return view('Photographer.photographerList', compact('photolist'));
-//        return $photolist ;
+        $myJSON = json_encode($photolist);
+        return $myJSON;
     }
     
-    
-
     public function getPhotographerById($id) {
-        
+        $photoModel = new PhotographerModel();
+        $photoList = $photoModel->getPhotographerById($id);
+        $myJSON = json_encode($photoList);
+        return $myJSON;
     }
 
     public function getPhotographerByName($keyword) {
