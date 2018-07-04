@@ -4,36 +4,6 @@
     <script src="{{asset('js/slide/jssor.slider-27.2.0.min.js')}}" type="text/javascript"></script>
 @endsection
 @section('body')
-<<<<<<< HEAD
-
-
-<div class="bg-menu-page">
-<div ng-controller="MenuController" ng-init="init()" id="init" >    
-    <script src="jssor.slider.min.js"></script>
-        <div id="jssor_1" class="slide-index1">
-            <div data-u="slides" class="slide-index2">
-                <div ng-repeat="image in images">    
-                    <div  class="mySlides" >
-                        <img src='<% image.img_base64 %>' data-u="image" width="100%"  > 
-                    </div>
-                </div>     
-                                     
-            </div>                                
-    </div>
-
-    <script>
-        var options = { $AutoPlay: 1 };
-        var jssor_1_slider = new $JssorSlider$("jssor_1", options);
-    </script>
-</div>
-
-<div class="container">
-   <div class="row">
-        <div class="col-sm-6 card margin-left-six">
-            <img src="{{asset('image/menu/date.jpg')}}" class="img-size">
-            <div class="container">
-                <h4><b class="text-bottom1">ค้นหาวันที่ต้องการ</b></h4>     
-=======
     <div id="jssor_1"
          style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
@@ -43,9 +13,9 @@
         </div>
         <div data-u="slides"
              style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-            <div data-p="170">
+            <div ng-repeat="img in images"></div>
+             <div data-p="170">
                 <img data-u="image" src="img/001.jpg"/>
->>>>>>> 5789a5695f389f8832b5a33c0b92dd56c4e5e445
             </div>
             <div data-p="170">
                 <img data-u="image" src="img/002.jpg"/>

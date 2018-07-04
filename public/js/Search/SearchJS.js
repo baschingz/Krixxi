@@ -16,12 +16,11 @@ app.controller('SearchController', function ($scope, $http) {
         debugger;
         var path = base_path + '/photolist/search';
         var req ={
-            method:'POST',
-            dataTypr:'json',
+            method:'POST',            
             url:path,
             data: e
         }
-        $http.post(path,{param:{keyword:e}}).then(function (response) {
+        $http(req).then(function (response) {
                 debugger;
                 alert(response.data);
             },

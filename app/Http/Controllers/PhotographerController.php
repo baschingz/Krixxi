@@ -32,12 +32,11 @@ class PhotographerController extends Controller {
         
     }
 
-    public function getPhotographerBySearch($keyword) {
-        // $photoModel = new PhotographerModel();
-        // $photoList = $photoModel->getPhotographerByKeyword($keyword);
-        // dd($keyword);
-       
-        return $keyword;
+    public function getPhotographerBySearch(Request $keyword) {
+        $photoModel = new PhotographerModel();
+        $photoList = $photoModel->getPhotographerByKeyword($keyword);
+        $myJSON = json_encode($photoList);       
+        return $myJSON;
     }
 
 }
