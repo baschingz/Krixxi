@@ -35,14 +35,14 @@
                 </div>
             </div>
             <div class="col-md-10">
-                <div class="navbar-flex">
+                <!-- <div class="navbar-flex">
                     <ul class="nav navbar-nav navbar-ul navbar-right">
                         <li><a class="glyphicon glyphicon-th-large" href="menu"></a></li>
                         <li><a class="glyphicon glyphicon-user" href="#"></a></li>
                         <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
                         <li><a class="glyphicon glyphicon-search" href="search"></a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
