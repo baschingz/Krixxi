@@ -17,6 +17,8 @@
         <link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
         <!-- Styles -->
+        
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&subset=latin-ext,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
         @yield('import')
     </head>
     <body >
@@ -51,6 +53,7 @@
         <script type="text/javascript">
         var base_path = "{{url('/')}}";
         </script>
+        
         @yield('script')
 
         <footer class="page-footer special-color-dark pt-4">
