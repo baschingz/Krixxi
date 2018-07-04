@@ -16,10 +16,12 @@ class PhotographerController extends Controller {
     }
     
     public function getPhotographerById($id) {
+        //dd($id);
         $photoModel = new PhotographerModel();
         $photoList = $photoModel->getPhotographerById($id);
         $myJSON = json_encode($photoList);
         return $myJSON;
+        // return $id;
     }
 
     public function getPhotographerByName($keyword) {

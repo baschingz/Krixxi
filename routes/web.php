@@ -29,6 +29,10 @@ Route::get('search', function(){
 
 Route::get('imglist', 'ImageController@getImageList');
 
-Route::get('photolist/search', 'PhotographerController@getPhotographerBySearch($keyword)');
+Route::get('photolist/search', 'PhotographerController@getPhotographerBySearch');
 
+Route::get('photolist/{id}', 'PhotographerController@getPhotographerById');
 
+Route::get('photographer/{id}', function($id){
+     return view('photographer.PhotographerProflie',compact("id"));
+});

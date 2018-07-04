@@ -8,10 +8,24 @@ app.controller('PhotographerController', function ($scope, $http) {
 
     $scope.init = function (page) {
         page = page || null;
-        
-        $timeout(function () {
+        // debugger;
 
-        }, 0);
+        var id = page;
+        var path = base_path + '/photolist/' + id;
+        var req = {
+            method: 'GET',
+            url: path,
+        };
+
+        $http(req).then(
+            function (response) {
+                // debugger;
+                $scope.photographer = response.data;
+                // alert($scope.photographer);
+            },
+            function (response) {
+                alert('fail');
+            }
+        );
     };
 });
-
