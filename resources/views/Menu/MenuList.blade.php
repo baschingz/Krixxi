@@ -4,9 +4,9 @@
     <script src="{{asset('js/slide/jssor.slider-27.2.0.min.js')}}" type="text/javascript"></script>
 @endsection
 @section('body')
-<<<<<<< HEAD
+
+<!-- SLIDE -->
     <div class="bg-menu">
-        <!-- SLIDE -->
         <div class="bg-slide">
             <div id="jssor_1" class="slide-show-menu-page">
                 <!-- Loading Screen -->
@@ -49,104 +49,57 @@
                         <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
                     </svg>
                 </div>
-=======
-    <div id="jssor_1"
-         style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin"
-             style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg"/>
-        </div>
-        <div data-u="slides"
-             style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-            <div ng-repeat="img in images"></div>
-             <div data-p="170">
-                <img data-u="image" src="img/001.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/002.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/003.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/004.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/005.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/006.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/007.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/008.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/009.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/010.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/011.jpg"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="img/012.jpg"/>
->>>>>>> 73f1c48b39a382b7399f24ccb5fce6ead02231d7
             </div>
             <script type="text/javascript">jssor_1_slider_init();</script>
         </div>
+    
 
-
-        <!-- MENU -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 card margin-left-six">
-                    <img src="{{asset('image/menu/date.jpg')}}" class="img-size">
-                    <div class="container">
-                        <h4><b class="text-bottom1">ค้นหาวันที่ต้องการ</b></h4>
-                    </div>
-                    <div class="overlay">
-                        <div class="text">ค้นหาวันที่ต้องการ</div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 card margin-left-ten">
-                    <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-size">
-                    <div class="container">
-                        <h4><b class="text-bottom2">ไลฟ์สไตล์</b></h4>
-                    </div>
-                    <div class="overlay">
-                        <div class="text">ไลฟ์สไตล์</div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 card margin-left-six">
-                    <img src="{{asset('image/menu/promotion.jpg')}}" class="img-size">
-                    <div class="container1">
-                        <h4><b class="text-bottom2">โปรโมชัน</b></h4>
-                    </div>
-                    <div class="overlay">
-                        <div class="text">โปรโมชัน</div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 card margin-left-ten">
-                    <img src="{{asset('image/menu/photographer.jpg')}}" class="img-size">
-                    <div class="container">
-                        <h4><b class="text-bottom1">ช่างภาพยอดนิยม</b></h4>
-                    </div>
-                    <div class="overlay">
-                        <div class="text">ช่างภาพยอดนิยม</div>
-                    </div>
-                </div>
+    <!-- MENU -->
+    <div class="container">
+   <div class="row">
+        <div class="col-sm-6 card margin-left-six">
+            <img src="{{asset('image/menu/date.jpg')}}" class="img-size">
+            <div class="container">
+                <h4><b class="text-bottom1">ค้นหาวันที่ต้องการ</b></h4>     
+            </div>
+            <div class="overlay">
+                <div class="text">ค้นหาวันที่ต้องการ</div>
             </div>
         </div>
 
-    </div>
+         <div class="col-sm-6 card margin-left-ten">
+            <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-size">
+            <div class="container">
+                <h4><b class="text-bottom2">ไลฟ์สไตล์</b></h4>     
+            </div>
+            <div class="overlay">
+                <div class="text">ไลฟ์สไตล์</div>
+            </div>
+        </div>
+
+         <div class="col-sm-6 card margin-left-six">
+            <img src="{{asset('image/menu/promotion.jpg')}}"  class="img-size">
+            <div class="container1">
+                <h4><b class="text-bottom2">โปรโมชัน</b></h4>     
+            </div>
+            <div class="overlay">
+                <div class="text">โปรโมชัน</div>
+            </div>
+        </div>
+
+         <div class="col-sm-6 card margin-left-ten">
+            <img src="{{asset('image/menu/photographer.jpg')}}" class="img-size">
+            <div class="container">
+                <h4><b class="text-bottom1">ช่างภาพยอดนิยม</b></h4>     
+            </div>
+            <div class="overlay">
+                <div class="text">ช่างภาพยอดนิยม</div>
+            </div>
+        </div>
+   </div>        
+</div>
+
+</div>
 @endsection
 
 @section('script')
