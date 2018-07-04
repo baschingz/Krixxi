@@ -19,7 +19,7 @@
         @yield('import')
     </head>
     <body >
-    <header style="margin-bottom:50px;">
+    <!-- <header style="margin-bottom:50px;">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -33,11 +33,7 @@
             </ul>
         </div>
     </nav>
-<<<<<<< HEAD
-=======
-    
->>>>>>> ed43512fb35483025325ff6c60bd9c1c83014428
-    </header>      
+    </header>       -->
    
     <br>
         
