@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 
         <link href="https://fonts.googleapis.com/css?family=Kanit:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
         <!-- Styles -->
         @yield('import')

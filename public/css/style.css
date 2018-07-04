@@ -85,6 +85,18 @@
   text-align: center;
 }
 
+.font-welcomepage1{
+  color:#F9FAF9;
+  font-size:8em; 
+  transition: 0.8;  
+}
 
+.font-welcomepage2{
+  color:#F9FAF9;
+  font-size: 3em;
+  font-family: 'Yantramanav', sans-serif;
+  transition: 0.8;
+  margin-top: -10%;
+}
 
 
