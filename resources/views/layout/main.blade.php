@@ -12,6 +12,8 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/background.css')}}"/> 
         <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
+        <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}"/>
+
 
         <link href="https://fonts.googleapis.com/css?family=Kanit:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
@@ -20,24 +22,19 @@
         @yield('import')
     </head>
     <body >
-    <!-- <header style="margin-bottom:50px;">
+    <!-- <header style="margin-bottom:50px;">-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="col-md-2">
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
             </div>
-<<<<<<< HEAD
-        </div>
+            </div>
             <!-- <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
-=======
-            <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
->>>>>>> 8be4aa94a41119701cbc795d8710dec0ac29d196
             <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
             <li><a class="glyphicon glyphicon-user" href="#"></a></li>
             <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
-<<<<<<< HEAD
             </ul>  -->
             <div class="col-md-10">
                 <div class="navbar-flex">
@@ -50,34 +47,32 @@
 
 </div>
                 </div>
+</div>
     </nav>
     
     </header>      
    
-=======
-            </ul> 
-        </div>
-    </nav>
-    </header>       -->
-
->>>>>>> 8be4aa94a41119701cbc795d8710dec0ac29d196
     <br>
     <nav>
     @yield('body')
     </nav> 
      <footer class="navbar-inverse navbar-bottom">
-         <div class="container">
-       <div class="col-md-4">
-        <div>Krixxi</div>
+         <div class="container footer">
+       <div class="col-md-5">
+        <img src="{{asset('image/icon/logo_onlyText.png')}}" class="logo-size">
         </div>
-       <div class="col-md-4">
-        <div>Contact us</div>
-        <div>E-mail : Krixxi@gmail.com</div>
-        <div>Tel : 098-107-5755</div>
-        <div>Facebook : Krixxi แหล่งรวมช่างภาพ</div>
+       <div class="col-md-3">
+        <div class="footer_contact">
+            <ul class="nav">
+        <li>Contact us</li>
+        <li>E-mail   : Krixxi@gmail.com</li>
+        <li>Tel      : 098-107-5755</li>
+        <li>Facebook : Krixxi แหล่งรวมช่างภาพ</li>
+</ul>
        </div>
+</div>
        <div class="col-md-4"></div>
-        <div >@ copyright Krixxi 2018</div>
+        <div class="footer_copyright">@ copyright Krixxi 2018</div>
        </div>
      </footer>   
       

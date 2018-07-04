@@ -1,0 +1,31 @@
+.footer{
+    font-size: 12px;
+    color: white;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    height: 5%;
+    
+  }
+
+ .footer_copyright{
+     margin-top: 2.5%;
+     text-align: center;
+ } 
+ .footer_contact{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+} 
+  .navbar-flex{
+    display: flex;
+    float: right;
+  }
+  
+  .navbar-ul{
+    display: flex;
+  }
+
+  .logo-size{
+      width: 40%;
+  }
+  
