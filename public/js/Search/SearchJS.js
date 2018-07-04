@@ -19,7 +19,10 @@ $scope.searchPG = function(e){
         var path = base_path +'/photolist/search';   
         $http.get(path).then(function(response)
     {
-
+        if(response.data)
+        {
+            
+        }
     },
     function(response)
     {

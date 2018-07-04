@@ -14,24 +14,30 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 
         <link href="https://fonts.googleapis.com/css?family=Kanit:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
         <!-- Styles -->
         @yield('import')
     </head>
     <body >
-    <header style="margin-bottom:50px;">
+    <!-- <header style="margin-bottom:50px;">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="col-md-2">
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
             </div>
+<<<<<<< HEAD
         </div>
             <!-- <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
+=======
+            <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
+>>>>>>> 8be4aa94a41119701cbc795d8710dec0ac29d196
             <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
             <li><a class="glyphicon glyphicon-user" href="#"></a></li>
             <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
+<<<<<<< HEAD
             </ul>  -->
             <div class="col-md-10">
                 <div class="navbar-flex">
@@ -48,6 +54,13 @@
     
     </header>      
    
+=======
+            </ul> 
+        </div>
+    </nav>
+    </header>       -->
+
+>>>>>>> 8be4aa94a41119701cbc795d8710dec0ac29d196
     <br>
     <nav>
     @yield('body')
