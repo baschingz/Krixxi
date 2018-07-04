@@ -94,3 +94,18 @@ html {
   font-weight: 600;
   padding-top: 0.7em;
 }
+
+.footer{
+  font-size: 12px;
+  color: white;
+}
+
+.navbar-flex{
+  display: flex;
+  float: right;
+}
+
+.navbar-ul{
+  display: flex;
+}
+

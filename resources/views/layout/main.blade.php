@@ -23,26 +23,70 @@
     <!-- <header style="margin-bottom:50px;">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
+            <div class="col-md-2">
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
             </div>
+<<<<<<< HEAD
+        </div>
+            <!-- <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
+=======
             <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
+>>>>>>> 8be4aa94a41119701cbc795d8710dec0ac29d196
             <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
             <li><a class="glyphicon glyphicon-user" href="#"></a></li>
             <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
+<<<<<<< HEAD
+            </ul>  -->
+            <div class="col-md-10">
+                <div class="navbar-flex">
+            <ul class="nav navbar-nav navbar-ul navbar-right">
+                <li ><a class="glyphicon glyphicon-th-large" href="menu"></a></li>
+                <li><a class="glyphicon glyphicon-user" href="#"></a></li>
+                <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
+                <li><a class="glyphicon glyphicon-search" href="search"></a></li>
+                </ul>
+
+</div>
+                </div>
+    </nav>
+    
+    </header>      
+   
+=======
             </ul> 
         </div>
     </nav>
     </header>       -->
 
+>>>>>>> 8be4aa94a41119701cbc795d8710dec0ac29d196
     <br>
     <nav>
     @yield('body')
     </nav> 
+<<<<<<< HEAD
      <footer>
 
      </footer>         
+=======
+     <footer class="navbar-inverse navbar-bottom">
+         <div class="container">
+       <div class="col-md-4">
+        <div>Krixxi</div>
+        </div>
+       <div class="col-md-4">
+        <div>Contact us</div>
+        <div>E-mail : Krixxi@gmail.com</div>
+        <div>Tel : 098-107-5755</div>
+        <div>Facebook : Krixxi แหล่งรวมช่างภาพ</div>
+       </div>
+       <div class="col-md-4"></div>
+        <div >@ copyright Krixxi 2018</div>
+       </div>
+     </footer>   
+      
+>>>>>>> 3f95c3960c91e61e6371143aa11026120afb7a66
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
@@ -52,10 +96,6 @@
         </script>
         @yield('script')
 
-        <footer class="page-footer special-color-dark pt-4">
-            <div class="container">
-            <div class="footer-copyright text-center py-3">copyright Krixxi 2018 </div>
-            </div>
-        </footer>
+        
     </body>
 </html>
