@@ -25,22 +25,30 @@
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
             </div>
-            <ul class="nav navbar-nav">
+            <!-- <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
             <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
             <li><a class="glyphicon glyphicon-user" href="#"></a></li>
             <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
-            </ul>
+            </ul>  -->
         </div>
     </nav>
+<<<<<<< HEAD
     </header>       -->
    
+=======
+    
+    </header>      
+  
+>>>>>>> d269704b6270ac2229ae17cce1f473c7e2ca89b7
     <br>
-        
-        
-        @yield('body')
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/i18n/datepicker.th-TH.js"></script>
+    <nav>
+    @yield('body')
+    </nav> 
+     <footer>
+
+     </footer>   
+      
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
@@ -49,5 +57,11 @@
         var base_path = "{{url('/')}}";
         </script>
         @yield('script')
+
+        <footer class="page-footer special-color-dark pt-4">
+            <div class="container">
+            <div class="footer-copyright text-center py-3">copyright Krixxi 2018 </div>
+            </div>
+        </footer>
     </body>
 </html>

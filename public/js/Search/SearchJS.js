@@ -1,28 +1,36 @@
-
-var app1 = angular.module('myApp', [], function ($interpolateProvider) {
+var app = angular.module('myApp', [], function ($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });
 
-app1.controller('SearchController', function($scope, $http){
+app.controller('SearchController',function($scope, $http){
 
-$scope.searchValue = typeof searchValue !== "undefined" ? searchValue ? searchValue : null : null;
-
-
-    $scope.search = function(e){
-        alert('hi');
-        //ส่งไปเช็ค backend
-    };
-
-    $scope.init = function (page) {
+$scope.photographyList = typeof searchValue !== "undefined" ? searchValue ? searchValue : null : null;
+$scope.searchValue={
+    location:'',
+    rate:'',
+    service:'',
+    date:''
+}
+$scope.searchPG = function(e){
         debugger;
-        page = page || null;
-        alert('hi');
+        // alert(e.location+e.rate+e.service+e.date);
+        //ส่งไปเช็ค backend
+        var path = base_path +'/photolist/search';   
+        $http.get(path).then(function(response)
+    {
+
+    },
+    function(response)
+    {
+        alert('fail');
+    }
+    );
     };
+
 
 });
 
 $(function(){
     $('#search').slideDown("slow");
-
 });

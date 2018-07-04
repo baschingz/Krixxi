@@ -21,7 +21,8 @@ class PhotographerModel extends Model {
 
     public function getPhotographerById($id) {
         try {
-            
+            $photolist = PhotographerModel::select('select * from photographer where id = :id', ['id' => $id]); 
+            return $photolist;
         } catch (\Exception $ex) {
             return $ex;
         }
@@ -43,4 +44,11 @@ class PhotographerModel extends Model {
         }
     }
 
+    public function getPhotographerBySearch($keyword) {
+        try {
+            $photolist = PhotographerModel::select();
+        } catch (\Exception $ex) {
+            return $ex;
+        }
+    }
 }

@@ -3,11 +3,14 @@
 
 @endsection
 @section('body')
-<div class="containerSearch col-sm-10 col-sm-offset-1" hidden id="search" ng-contoller="SearchController" ng-init="init()">
+
+<div ng-controller="SearchController">
+    <div ng-form ng-init="init()">
+<div class="containerSearch col-sm-10 col-sm-offset-1" hidden id="search" >
     <div class="panelSearch" >
         <div class="panel-headingSearch form-center font-topic">ค้นหา</div>
             <div class="panel-body">
-                <div class="">
+                <div ng-contoller="SearchController">
                     <div class="form-center">
                         <div class="col-sm-12" >
                             <div class="form-group">
@@ -48,17 +51,18 @@
                             </div>
                         </div>
                     </div>
-                </div>
-               
+                </div>               
             </div>        
         <div class="panel-footerSearch form-center" >
             <div>
-                <button class="btnSearch" type="button" ng-click="search(searchValue)">
+                <button class="btnSearch" type="button" ng-click="searchPG(searchValue)">
                     <i class="glyphicon glyphicon-search"></i>
                     ค้นหา
                 </button>
             </div>
         </div>
+    </div>
+</div>
     </div>
 </div>
 @endsection
