@@ -3,10 +3,7 @@
 
 @endsection
 <div ng-controller="PhotographerController" ng-init="init({{$id}})">
-<div><% photographer.penname %></div>
-<div><% photographer.tel %></div>
-<div><% photographer.description %></div>
-<div><% photographer.rate %></div>
+
 </div>
 @section('script')
 
