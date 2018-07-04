@@ -22,26 +22,52 @@
     <header style="margin-bottom:50px;">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
+            <div class="col-md-2">
             <div class="navbar-header">
             <a class="navbar-brand" href="menu">Krixxi</a>
             </div>
+        </div>
             <!-- <ul class="nav navbar-nav" style="margin-left:40%; margin-right:40%;">
             <li><a  class="glyphicon glyphicon-th-large" href="menu"></a></li>
             <li><a class="glyphicon glyphicon-user" href="#"></a></li>
             <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
             <li><a class="glyphicon glyphicon-search" href="search"></a></li>
             </ul>  -->
-        </div>
+            <div class="col-md-10">
+                <div class="navbar-flex">
+            <ul class="nav navbar-nav navbar-ul navbar-right">
+                <li ><a class="glyphicon glyphicon-th-large" href="menu"></a></li>
+                <li><a class="glyphicon glyphicon-user" href="#"></a></li>
+                <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
+                <li><a class="glyphicon glyphicon-search" href="search"></a></li>
+                </ul>
+
+</div>
+                </div>
     </nav>
     
     </header>      
    
     <br>
-        
-        
-        @yield('body')
-        
-       
+    <nav>
+    @yield('body')
+    </nav> 
+     <footer class="navbar-inverse navbar-bottom">
+         <div class="container">
+       <div class="col-md-4">
+        <div>Krixxi</div>
+        </div>
+       <div class="col-md-4">
+        <div>Contact us</div>
+        <div>E-mail : Krixxi@gmail.com</div>
+        <div>Tel : 098-107-5755</div>
+        <div>Facebook : Krixxi แหล่งรวมช่างภาพ</div>
+       </div>
+       <div class="col-md-4"></div>
+        <div >@ copyright Krixxi 2018</div>
+       </div>
+     </footer>   
+      
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
