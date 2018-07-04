@@ -9,11 +9,12 @@ app.controller('MenuController', function ($scope, $http) {
 
     $scope.init = function (page) {
         page = page || null;
+       
         var path = base_path + '/imglist';
         $http.get(path).then(
             function (response) {
+                // debugger;
                 //   alert(response.data);
-
                 $scope.photographers = response.data;
                 //   alert($scope.photographers);
                 return $scope.photographers;

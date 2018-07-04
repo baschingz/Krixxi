@@ -14,10 +14,14 @@ $scope.searchValue={
 }
 $scope.searchPG = function(e){
         debugger;
-        // alert(e.location+e.rate+e.service+e.date);
         //ส่งไปเช็ค backend
-        var path = base_path +'/photolist/search';   
-        $http.get(path).then(function(response)
+        var path = base_path +'/photolist/search'; 
+        var req = {
+            method:'GET',
+            url:path,
+            data:e
+        }  
+        $http(req).then(function(response)
     {
         if(response.data)
         {
