@@ -40,8 +40,9 @@
                                 <div class="col-sm-6 form-center1">
                                 <label class="col-sm-5 control-label" for="sel1">รูปแบบ:</label>
                                     <select  class="form-control col-sm-7" ng-model="searchValue.service" >
-                                        <option value="1" >เต็มวัน</option>
-                                        <option value="2">ครึ่งวัน</option>
+                                        <option value="T1" >เต็มวัน</option>
+                                        <option value="T2">ครึ่งวัน</option>
+                                        <option value="T3">ครึ่งวันและเต็มวัน</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-6 form-center1">
