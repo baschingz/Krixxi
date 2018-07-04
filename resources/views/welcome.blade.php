@@ -23,7 +23,7 @@
 
 <div id="div1" style="margin-top:10%;" hidden>
     <div class="container">
-        <div class="col-md-4 col-md-offset-2    " style="margin-top:5%; color:white;">
+        <div class="col-md-4 col-md-offset-2" style="margin-top:5%; color:white;">
             <div class="font-welcomepage1">Krixxi</div>
             <div class="font-welcomepage2">Keep memory</div>
             <a href="menu" class="btn btn-info">Get Start</a>
