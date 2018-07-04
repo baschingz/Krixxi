@@ -55,7 +55,49 @@
 </div> 
 
 <!-- MENU -->
-    
+<div class="container">
+   <div class="row">
+        <div class="col-sm-6 card margin-left-six">
+            <img src="{{asset('image/menu/date.jpg')}}" class="img-size">
+            <div class="">
+                <h4><b class="text-bottom1">ค้นหาวันที่ต้องการ</b></h4>     
+            </div>
+            <div class="overlay">
+                <div class="text">ค้นหาวันที่ต้องการ</div>
+            </div>
+        </div>
+
+         <div class="col-sm-6 card margin-left-ten">
+            <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-size">
+            <div class="">
+                <h4><b class="text-bottom2">ไลฟ์สไตล์</b></h4>     
+            </div>
+            <div class="overlay">
+                <div class="text">ไลฟ์สไตล์</div>
+            </div>
+        </div>
+
+         <div class="col-sm-6 card margin-left-six">
+            <img src="{{asset('image/menu/promotion.jpg')}}"  class="img-size">
+            <div class="">
+                <h4><b class="text-bottom2">โปรโมชัน</b></h4>     
+            </div>
+            <div class="overlay">
+                <div class="text">โปรโมชัน</div>
+            </div>
+        </div>
+
+         <div class="col-sm-6 card margin-left-ten">
+            <img src="{{asset('image/menu/photographer.jpg')}}" class="img-size">
+            <div class="">
+                <h4><b class="text-bottom1">ช่างภาพยอดนิยม</b></h4>     
+            </div>
+            <div class="overlay">
+                <div class="text">ช่างภาพยอดนิยม</div>
+            </div>
+        </div>
+   </div>        
+</div>    
 
 
 @endsection

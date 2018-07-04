@@ -52,7 +52,7 @@
 <nav>
     @yield('body')
 </nav>
-<footer class="navbar-inverse navbar-fixed-bottom">
+<footer class="navbar-inverse navbar-bottom">
     <div class="container footer">
         <div class="col-sm-12 col-sm-offset-1">
             <div class="col-sm-4 logo-size">
