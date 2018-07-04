@@ -13,7 +13,7 @@ app.controller('PhotographerController', function ($scope, $http) {
         var id = page;
         var path = base_path + '/photolist/' + id;
         var req = {
-            method: 'GET',
+            method: 'POST',
             url: path,
         };
 

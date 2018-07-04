@@ -16,7 +16,7 @@ class PhotographerController extends Controller {
     }
     
     public function getPhotographerById($id) {
-        //dd($id);
+        // dd($id);
         $photoModel = new PhotographerModel();
         $photoList = $photoModel->getPhotographerById($id);
         $myJSON = json_encode($photoList);
@@ -33,7 +33,11 @@ class PhotographerController extends Controller {
     }
 
     public function getPhotographerBySearch($keyword) {
-        
+        // $photoModel = new PhotographerModel();
+        // $photoList = $photoModel->getPhotographerByKeyword($keyword);
+        // dd($keyword);
+       
+        return $keyword;
     }
 
 }

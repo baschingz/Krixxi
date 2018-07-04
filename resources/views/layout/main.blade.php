@@ -23,6 +23,7 @@
     </head>
     <body >
     <!-- <header style="margin-bottom:50px;">-->
+        <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="col-md-2">
@@ -56,12 +57,7 @@
     <nav>
     @yield('body')
     </nav> 
-<<<<<<< HEAD
-     <footer>
-
-     </footer>         
-=======
-     <footer class="navbar-inverse navbar-bottom">
+     <!-- <footer class="navbar-inverse navbar-bottom">
          <div class="container footer">
        <div class="col-md-5">
         <img src="{{asset('image/icon/logo_onlyText.png')}}" class="logo-size">
@@ -79,9 +75,8 @@
        <div class="col-md-4"></div>
         <div class="footer_copyright">@ copyright Krixxi 2018</div>
        </div>
-     </footer>   
+     </footer>    -->
       
->>>>>>> 3f95c3960c91e61e6371143aa11026120afb7a66
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>

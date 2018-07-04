@@ -12,9 +12,9 @@
     <script src="jssor.slider.min.js"></script>
         <div id="jssor_1" class="slide-index1">
             <div data-u="slides" class="slide-index2">
-                <div ng-repeat="p in photographers">    
+                <div ng-repeat="image in images">    
                     <div  class="mySlides" >
-                        <img src='<% p.img_base64 %>' data-u="image" width="100%"  > 
+                        <img src='<% image.img_base64 %>' data-u="image" width="100%"  > 
                     </div>
                 </div>     
                                      
