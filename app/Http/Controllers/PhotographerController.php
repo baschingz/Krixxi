@@ -33,10 +33,14 @@ class PhotographerController extends Controller {
     }
 
     public function getPhotographerBySearch(Request $keyword) {
-        $photoModel = new PhotographerModel();
-        $photoList = $photoModel->getPhotographerByKeyword($keyword);
-        $myJSON = json_encode($photoList);       
+         $loction = $keyword->location;
+         $cost = $keyword->cost;
+         $service =$keyword->service;
+         $photolist = DB::table('photographer')->where('loc_id','=',$loction)->where($service,'>=',$cost)->where($service,'<=',$cost+999)->get();
+        // dd($loction);
+        $myJSON = json_encode($photolist);       
         return $myJSON;
+        // return $keyword;
     }
 
 }
