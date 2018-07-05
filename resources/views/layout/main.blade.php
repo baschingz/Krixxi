@@ -52,7 +52,7 @@
 <nav>
     @yield('body')
 </nav>
-<section style="margin-top:39%;">
+<section style="margin-top:20%;">
 <footer class="footer navbar-bottom">
     <div class="container">
         <div class="col-sm-12 col-sm-offset-1">

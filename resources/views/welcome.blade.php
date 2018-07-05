@@ -11,6 +11,7 @@
     <title>Krixxi</title>
 
     <!-- Fonts -->
+    <link rel="icon" href="{{asset('image/icon/Icon-20.png')}}" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/background.css')}}"/>

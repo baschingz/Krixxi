@@ -18,7 +18,7 @@ app.controller('SearchController', function ($scope, $http) {
     $scope.check = false;
     $scope.alert = null;
     $scope.searchPG = function (e) {
-        debugger;
+        // debugger;
         var path = base_path + '/photolist/search';
         var req = {
             method: 'POST',
@@ -26,7 +26,7 @@ app.controller('SearchController', function ($scope, $http) {
             data: e
         }
         $http(req).then(function (response) {
-                debugger;
+                // debugger;
                 // alert(response.data);
                 $scope.photographyList=response.data;
                 if( $scope.photographyList != null &&  $scope.photographyList.length != 0)
