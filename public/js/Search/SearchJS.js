@@ -7,15 +7,16 @@ app.controller('SearchController', function ($scope, $http) {
 
     $scope.photographyList = typeof searchValue !== "undefined" ? searchValue ? searchValue : null : null;
     $scope.searchValue = {
-        location: '',
-        cost: null,
-        service: '',
+        location: 'L1',
+        cost: '0',
+        service: 'fulltime',
         date: ''
     };
     $scope.location = typeof location != "undefined" ? location ? location : null : null;
     $scope.cost = typeof cost != "undefined" ? cost ? cost : null : null;
     $scope.service = typeof service != "undefined" ? service ? service : null : null;
-
+    $scope.check = false;
+    $scope.alert = null;
     $scope.searchPG = function (e) {
         debugger;
         var path = base_path + '/photolist/search';
@@ -26,11 +27,21 @@ app.controller('SearchController', function ($scope, $http) {
         }
         $http(req).then(function (response) {
                 debugger;
-                alert(response.data);
+                // alert(response.data);
+                $scope.photographyList=response.data;
+                if( $scope.photographyList != null &&  $scope.photographyList.length != 0)
+                {
+                    $scope.check = true;
+                }
+                else{
+                    alert("ไม่พบข้อมูลช่างภาพที่ค้นหา");
+                }                
+                                
             },
             function (response) {
                 // debugger;
                 alert('fail');
+                
             }
         );
     };
