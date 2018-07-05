@@ -13,10 +13,10 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}"/>
-
-
     <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400,500" rel="stylesheet">
+
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
     <!-- Styles -->
 
@@ -24,7 +24,7 @@
           rel="stylesheet" type="text/css"/>
     @yield('import')
 </head>
-<body>
+<body class="bg-menu">
 <!-- <header style="margin-bottom:50px;">-->
 <header class="margin-bottom-menu">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -52,8 +52,8 @@
 <nav>
     @yield('body')
 </nav>
-<footer class="navbar-inverse navbar-bottom">
-    <div class="container footer">
+<footer class="footer navbar-bottom">
+    <div class="container">
         <div class="col-sm-12 col-sm-offset-1">
             <div class="col-sm-4 logo-size">
                 Krixxi
@@ -82,7 +82,6 @@
 <script type="text/javascript">
     var base_path = "{{url('/')}}";
 </script>
-
 @yield('script')
 
 

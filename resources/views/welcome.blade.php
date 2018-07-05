@@ -18,9 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 <!-- <link rel="stylesheet" type="text/css" href="{{asset('css/docs.min.css')}}"/> -->
 </head>
-<body>
-
-
+<body class="bg-welcome">
 <div id="div1" style="margin-top:10%;" hidden>
     <div class="container">
         <div class="col-md-4 col-md-offset-2" style="margin-top:5%; color:white;">

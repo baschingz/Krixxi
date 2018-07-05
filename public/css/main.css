@@ -1,9 +1,9 @@
 .footer {
-  color: white;
+  color: rgb(0, 0, 0);
   padding-bottom: 1%;
-  padding-top: 1%;
+  padding-top: 0.75em;
   height: 5%;
-  
+  background-color: rgb(106, 221, 230);
 }
 
 .footer_copyright {
@@ -29,7 +29,6 @@
   margin-left: 0%;
   font-weight: 300;
   font-size: 3.1em;
-  
 }
   
 .margin-bottom-menu {
