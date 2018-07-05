@@ -72,7 +72,7 @@
                 <div class="container">
                     <div class="card-deck">
                         <div class="card" ng-repeat="obj in photographyList">
-                            <img class="card-img-top" src="" >
+                            <a href="{{url('/')}}/photographer/<% obj.pg_id %>"><img class="card-img-top" src="" >
                             <div class="card-block">
                                 <h4 class="card-title">
                                 <i class="glyphicon glyphicon-camera" style="color:#8AB7D5"></i>    
@@ -89,6 +89,7 @@
                                 <% obj.fulltime %></label>
                                 <label class="card-text "></label>
                             </div>
+                            </a>
                         </div>  
                     </div>
                 </div>
