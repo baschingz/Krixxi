@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}"/>
-    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,200" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
@@ -50,7 +49,7 @@
 <nav>
     @yield('body')
 </nav>
-<section style="margin-top:39%;">
+<section style="margin-top:20%;">
     <footer class="footer navbar-bottom">
         <div class="container">
             <div class="col-sm-12 col-sm-offset-1">

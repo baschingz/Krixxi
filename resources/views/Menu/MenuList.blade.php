@@ -87,7 +87,7 @@
                     <div class="col-sm-5 card-menu3">
                         <img src="{{asset('image/menu/photographer.jpg')}}" class="img-card-size">
                         <div class="overlay3">
-                            <div class="text">โปรโมชัน</div>
+                            <div class="text">ช่างภาพยอดนิยม</div>
                         </div>
                     </div>
                 </div>    

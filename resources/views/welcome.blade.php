@@ -26,7 +26,7 @@
             <div class="col-sm-7" style="margin-top:5%; color:white;">
                 <div class="font-welcomepage1">Krixxi</div>
                 <div class="font-welcomepage2">Keep memory</div>
-                <a href="menu" class="btn btn-info margin-top">Get Start</a>
+                <a href="menu" class="btn btn-default margin-top">Get Start</a>
             </div>
             <div class="col-sm-5">
                 <div style="margin-top:7%;"></div>

@@ -3292,8 +3292,8 @@ select[multiple].input-lg {
       -ms-user-select: none;
           user-select: none;
   background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  /* border: 1px solid transparent;
+  border-radius: 4px; */
 }
 .btn:focus,
 .btn:active:focus,
@@ -3331,9 +3331,12 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 2px 2px 12px #131313;
+  width:150px;
+  height: 45px;
+  font-size: 20px;
 }
 .btn-default:focus,
 .btn-default.focus {
