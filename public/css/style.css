@@ -19,20 +19,29 @@
 }
 
 .font-welcomepage1{
-  color:#F9FAF9;
-  font-size:8em; 
+  color:rgb(255, 255, 255);
+  font-size:9.5em; 
   transition: 0.8;  
+  text-shadow: 1px 1px 1px rgb(65, 65, 65), 
+               3px 3px 5px rgb(63, 63, 63); 
+  margin-left: -1%;
+  margin-right: -3%;
 }
 
 .font-welcomepage2{
-  color:#F9FAF9;
+  color:rgb(255, 255, 255);
   font-size: 3em;
   font-family: 'Yantramanav', sans-serif;
+  font-weight: 300;
   transition: 0.8;
-  margin-top: -10%;
+  margin-top: -6%;
+  text-shadow: 1px 1px 1px rgb(65, 65, 65), 
+               3px 3px 5px rgb(63, 63, 63); ;
 }
 
-
+.margin-top{
+  margin-top: 3%;
+}
 /*slide*/
 /*jssor slider loading skin spin css*/
 .jssorl-009-spin img {
