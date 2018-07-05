@@ -52,6 +52,7 @@
 <nav>
     @yield('body')
 </nav>
+<section style="margin-top:39%;">
 <footer class="footer navbar-bottom">
     <div class="container">
         <div class="col-sm-12 col-sm-offset-1">
@@ -74,7 +75,7 @@
         </div>
     </div>
 </footer>
-
+</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>

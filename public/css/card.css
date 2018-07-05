@@ -1,15 +1,46 @@
-.card-menu {
+
+  .card-menu1 {
     position: relative;
-    width: 50%;
+    margin-left: 0%;
+    margin-right: 2%;   
+    margin-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .card-menu2 {
+    position: relative;
+    margin-left: 0%;
+    margin-right: 2%;   
+    margin-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .card-menu3 {
+    position: relative;
+    margin-left: 0%;
+    margin-right: 2%;   
+    margin-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .card-menu4 {
+    position: relative;
+    margin-left: 0%;
+    margin-right: 2%;   
+    margin-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .img-card-size{
+    width:100%;
+    height:320px;
   }
   
-  .image-size {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
+  .overlay1 {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -19,20 +50,73 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: rgb(0, 139, 186);
   }
   
-  .card-menu:hover .overlay {
-    opacity: 1;
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 139, 186);
+  }
+
+  .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 139, 186);
+  }
+
+  .overlay24{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 139, 186);
+  }
+
+  .card-menu1:hover .overlay1 {
+    opacity: 0.7;
+  }
+
+  .card-menu2:hover .overlay2 {
+    opacity: 0.7;
+  }
+
+  .card-menu3:hover .overlay3 {
+    opacity: 0.7;
+  }
+
+  .card-menu4:hover .overlay4 {
+    opacity: 0.7;
   }
   
   .text {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 500;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    border-bottom: 5px solid rgb(7, 43, 97);
   }

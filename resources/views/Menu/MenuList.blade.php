@@ -9,65 +9,91 @@
 @section('body')
 
     <!-- SLIDE -->
-    <div ng-controller="MenuController" ng-init="init()">
-        <div class="bg-slide">
-            <div id="jssor_1" class="slide-show-menu-page">
-                <!-- Loading Screen -->
-                <div data-u="slides" class="slide-cursor">
-                    <div data-p="170">
-                        <img data-u="image" src="<% images[0].imgidex_base64 %>"/>
-                        <div data-u="caption" data-t="3" class="font-index">Krixxi</div>
-                        <div data-u="caption" data-t="3" class="font-index2">Keep memory</div>
+    <section>
+        <div ng-controller="MenuController" ng-init="init()">
+            <div class="bg-slide">
+                <div id="jssor_1" class="slide-show-menu-page">
+                    <!-- Loading Screen -->
+                    <div data-u="slides" class="slide-cursor">
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[0].imgidex_base64 %>"/>
+                            <div data-u="caption" data-t="3" class="font-index">Krixxi</div>
+                            <div data-u="caption" data-t="3" class="font-index2">Keep memory</div>
+                        </div>
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[1].imgidex_base64 %>"/>
+                        </div>
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[2].imgidex_base64 %>"/>
+                        </div>
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[3].imgidex_base64 %>"/>
+                        </div>
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[4].imgidex_base64 %>"/>
+                        </div>
                     </div>
-                    <div data-p="170">
-                        <img data-u="image" src="<% images[1].imgidex_base64 %>"/>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;"
+                         data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000"
+                                 style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
                     </div>
-                    <div data-p="170">
-                        <img data-u="image" src="<% images[2].imgidex_base64 %>"/>
-                    </div>
-                    <div data-p="170">
-                        <img data-u="image" src="<% images[3].imgidex_base64 %>"/>
-                    </div>
-                    <div data-p="170">
-                        <img data-u="image" src="<% images[4].imgidex_base64 %>"/>
-                    </div>
-                </div>
-                <!-- Bullet Navigator -->
-                <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;"
-                     data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-                    <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;"
+                         data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
                         <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;"
+                         data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
                         </svg>
                     </div>
                 </div>
-                <!-- Arrow Navigator -->
-                <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;"
-                     data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                        <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-                    </svg>
-                </div>
-                <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;"
-                     data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                        <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-                    </svg>
-                </div>
+                <script type="text/javascript">jssor_1_slider_init();</script>
             </div>
-            <script type="text/javascript">jssor_1_slider_init();</script>
         </div>
-    </div>
-
+    </section>
     <!-- MENU -->
-    <div class="card-menu">
-    <img src="{{asset('image/menu/date.jpg')}}" class="img-size">
-        <div class="overlay">
-            <div class="text">Hello World</div>
+    <section>
+        <div class="container col-sm-offset-2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-5 card-menu1">
+                        <img src="{{asset('image/menu/date.jpg')}}" class="img-card-size">
+                        <div class="overlay1">
+                            <div class="text">ค้นหาวันที่ต้องการ</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 card-menu2">
+                        <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-card-size">
+                        <div class="overlay2">
+                            <div class="text">ไลฟ์สไตล์</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 card-menu3">
+                        <img src="{{asset('image/menu/promotion.jpg')}}"  class="img-card-size">
+                        <div class="overlay3">
+                            <div class="text">โปรโมชัน</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 card-menu3">
+                        <img src="{{asset('image/menu/photographer.jpg')}}" class="img-card-size">
+                        <div class="overlay3">
+                            <div class="text">โปรโมชัน</div>
+                        </div>
+                    </div>
+                </div>    
+            </div>               
         </div>
-    </div>
-    </div>
-
+    </section>
 @endsection
 
 @section('script')
