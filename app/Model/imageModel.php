@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 
 class imageModel extends Model {
-    protected $table = 'imagecenter';
+    protected $table = 'imageidex';
 
     public function getImageList()
     {

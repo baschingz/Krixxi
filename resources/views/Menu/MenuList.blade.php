@@ -2,104 +2,100 @@
 @section('import')
     <script src="{{asset('js/slide/slide.js')}}"></script>
     <script src="{{asset('js/slide/jssor.slider-27.2.0.min.js')}}" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{asset('css/card.css')}}">
+
 @endsection
 @section('body')
 
-<!-- SLIDE -->
-    
-<div class="bg-slide">
-    <div id="jssor_1" class="slide-show-menu-page">
-        <!-- Loading Screen -->
-        <div data-u="slides" class="slide-cursor">
-            <div data-p="170">
-                <img data-u="image" src="{{asset('image/menu/promotion.jpg')}}"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="{{asset('image/menu/photographer.jpg')}}"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="{{asset('image/menu/promotion.jpg')}}"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="{{asset('image/menu/photographer.jpg')}}"/>
-            </div>
-            <div data-p="170">
-                <img data-u="image" src="{{asset('image/menu/date.jpg')}}"/>
-            </div>
-            </div>
-            <!-- Bullet Navigator -->
-            <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;"
-                data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-                <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                    </svg>
+    <!-- SLIDE -->
+    <section>
+        <div ng-controller="MenuController" ng-init="init()">
+            <div class="bg-slide">
+                <div id="jssor_1" class="slide-show-menu-page">
+                    <!-- Loading Screen -->
+                    <div data-u="slides" class="slide-cursor">
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[0].imgidex_base64 %>"/>
+                            <div data-u="caption" data-t="3" class="font-index">Krixxi</div>
+                            <div data-u="caption" data-t="3" class="font-index2">Keep memory</div>
+                        </div>
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[1].imgidex_base64 %>"/>
+                        </div>
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[2].imgidex_base64 %>"/>
+                        </div>
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[3].imgidex_base64 %>"/>
+                        </div>
+                        <div data-p="170">
+                            <img data-u="image" src="<% images[4].imgidex_base64 %>"/>
+                        </div>
+                    </div>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;"
+                         data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000"
+                                 style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;"
+                         data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;"
+                         data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-            <!-- Arrow Navigator -->
-            <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;"
-                data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-                </svg>
-            </div>
-            <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;"
-                data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-                </svg>
+                <script type="text/javascript">jssor_1_slider_init();</script>
             </div>
         </div>
-        <script type="text/javascript">jssor_1_slider_init();</script>
-    </div>
-</div> 
-
-<!-- MENU -->
-<div class="container">
-   <div class="row">
-        <div class="col-sm-6 card margin-left-six">
-            <img src="{{asset('image/menu/date.jpg')}}" class="img-size">
-            <div class="">
-                <h4><b class="text-bottom1">ค้นหาวันที่ต้องการ</b></h4>     
-            </div>
-            <div class="overlay">
-                <div class="text">ค้นหาวันที่ต้องการ</div>
-            </div>
+    </section>
+    <!-- MENU -->
+    <section>
+        <div class="container col-sm-offset-2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a  href= "http://localhost:8000/search">
+                    <div class="col-sm-5 card-menu1">
+                        <img src="{{asset('image/menu/date.jpg')}}"  class="img-card-size">
+                        <div class="overlay1">
+                            <div class="text">ค้นหาวันที่ต้องการ</div>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="col-sm-5 card-menu2">
+                        <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-card-size">
+                        <div class="overlay2">
+                            <div class="text">ไลฟ์สไตล์</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 card-menu3">
+                        <img src="{{asset('image/menu/promotion.jpg')}}"  class="img-card-size">
+                        <div class="overlay3">
+                            <div class="text">โปรโมชัน</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 card-menu3">
+                        <img src="{{asset('image/menu/photographer.jpg')}}" class="img-card-size">
+                        <div class="overlay3">
+                            <div class="text">ช่างภาพยอดนิยม</div>
+                        </div>
+                    </div>
+                </div>    
+            </div>               
         </div>
-
-         <div class="col-sm-6 card margin-left-ten">
-            <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-size">
-            <div class="">
-                <h4><b class="text-bottom2">ไลฟ์สไตล์</b></h4>     
-            </div>
-            <div class="overlay">
-                <div class="text">ไลฟ์สไตล์</div>
-            </div>
-        </div>
-
-         <div class="col-sm-6 card margin-left-six">
-            <img src="{{asset('image/menu/promotion.jpg')}}"  class="img-size">
-            <div class="">
-                <h4><b class="text-bottom2">โปรโมชัน</b></h4>     
-            </div>
-            <div class="overlay">
-                <div class="text">โปรโมชัน</div>
-            </div>
-        </div>
-
-         <div class="col-sm-6 card margin-left-ten">
-            <img src="{{asset('image/menu/photographer.jpg')}}" class="img-size">
-            <div class="">
-                <h4><b class="text-bottom1">ช่างภาพยอดนิยม</b></h4>     
-            </div>
-            <div class="overlay">
-                <div class="text">ช่างภาพยอดนิยม</div>
-            </div>
-        </div>
-   </div>        
-</div>    
-
-
+    </section>
 @endsection
 
 @section('script')

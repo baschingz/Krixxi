@@ -38,3 +38,5 @@ Route::post('photolist/{id}', 'PhotographerController@getPhotographerById');
 Route::get('photographer/{id}', function($id){
      return view('photographer.PhotographerProflie',compact("id"));
 });
+
+Route::get('getselect', 'SearchController@getSelect');

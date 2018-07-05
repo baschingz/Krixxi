@@ -14,6 +14,7 @@ class ImageController extends Controller {
         // dd($imglist);
         $myJSON = json_encode($imglist);
         return $myJSON;
+        // return 1;
         // return view('menu.MenuList',compact('imglist'));
     }
 }
