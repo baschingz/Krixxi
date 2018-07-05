@@ -66,12 +66,14 @@
         <div class="container col-sm-offset-2">
             <div class="row">
                 <div class="col-sm-12">
+                    <a  href= "http://localhost:8000/search">
                     <div class="col-sm-5 card-menu1">
-                        <img src="{{asset('image/menu/date.jpg')}}" class="img-card-size">
+                        <img src="{{asset('image/menu/date.jpg')}}"  class="img-card-size">
                         <div class="overlay1">
                             <div class="text">ค้นหาวันที่ต้องการ</div>
                         </div>
                     </div>
+                    </a>
                     <div class="col-sm-5 card-menu2">
                         <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-card-size">
                         <div class="overlay2">
