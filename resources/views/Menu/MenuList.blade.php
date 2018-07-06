@@ -68,26 +68,26 @@
                 <div class="col-sm-12">
                     <a  href= "http://localhost:8000/search">
                     <div class="col-sm-5 card-menu1">
-                        <img src="{{asset('image/menu/date.jpg')}}"  class="img-card-size">
+                        <img src="{{asset('image/menu/date.jpg')}}"  class="img-card-size" height="320px">
                         <div class="overlay1">
                             <div class="text">ค้นหาวันที่ต้องการ</div>
                         </div>
                     </div>
                     </a>
                     <div class="col-sm-5 card-menu2">
-                        <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-card-size">
+                        <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-card-size" height="320px">
                         <div class="overlay2">
                             <div class="text">ไลฟ์สไตล์</div>
                         </div>
                     </div>
                     <div class="col-sm-5 card-menu3">
-                        <img src="{{asset('image/menu/promotion.jpg')}}"  class="img-card-size">
+                        <img src="{{asset('image/menu/promotion.jpg')}}"  class="img-card-size" height="320px">
                         <div class="overlay3">
                             <div class="text">โปรโมชัน</div>
                         </div>
                     </div>
                     <div class="col-sm-5 card-menu3">
-                        <img src="{{asset('image/menu/photographer.jpg')}}" class="img-card-size">
+                        <img src="{{asset('image/menu/photographer.jpg')}}" class="img-card-size" height="320px">
                         <div class="overlay3">
                             <div class="text">ช่างภาพยอดนิยม</div>
                         </div>
