@@ -70,28 +70,7 @@
         <div ng-if="check">
             <div class="container-fluid">
                 <div class="container">
-                    <div class="card-deck">
-                        <div class="card" ng-repeat="obj in photographyList">
-                            <a href="{{url('/')}}/photographer/<% obj.pg_id %>"><img class="card-img-top" src="" >
-                            <div class="card-block">
-                                <h4 class="card-title">
-                                <i class="glyphicon glyphicon-camera" style="color:#8AB7D5"></i>    
-                                <% obj.penname %></h4>
-                                <label class="card-text">
-                                <i class="glyphicon glyphicon-list-alt" style="color:#8AB7D5"></i>  parttime :
-                                    <% obj.description %>
-                                </label>
-                                <label class="card-text">
-                                 <i class="glyphicon glyphicon-time" style="color:#8AB7D5"></i>  parttime :   
-                                <% obj.parttime %></label>
-                                <label class="card-text">
-                                <i class="glyphicon glyphicon-time" style="color:#8AB7D5"></i>  fulltime :    
-                                <% obj.fulltime %></label>
-                                <label class="card-text "></label>
-                            </div>
-                            </a>
-                        </div>  
-                    </div>
+                   
                 </div>
             </div>
         </div>
