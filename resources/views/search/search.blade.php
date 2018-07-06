@@ -5,9 +5,9 @@
 
 @endsection
 @section('body')
-
-<section class="bg-search">
 <div ng-controller="SearchController">
+<section class="bg-search">
+
     <div ng-form ng-init="init()">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
@@ -69,29 +69,31 @@
         <!-- <div ng-repeat="obj in photographyList"></div> -->
         
     </div>
-</div>
+
 </section>
 <setion>
-    <div class="container">
-        <div class="card hovercard">
-            <img src="http://placehold.it/300x200/000000/&text=Header" alt=""/>
-            <div class="avatar">
-                <img src="http://placehold.it/80X80/333333/&text=Head" alt="" />
-            </div>
-            <div class="info">
-                <div class="title">
-                    The Title
+    <div ng-if="check">
+        <div class="container" ng-repeat="obj in photographyList">    
+            <div class="card hovercard" >
+                <img src="<% obj.cover_img %>" alt=""/>
+                <div class="avatar">
+                    <img src="<% obj.profile_img%>" alt="" />
                 </div>
-                <div class="desc">Lorem ipsum</div>
-                <div class="desc">Lorem ipsum</div>
-                <div class="desc">Lorem ipsum</div>
-            </div>
-            <div class="bottom">
-                <button class="btn btn-default">Button</button>
-            </div>
-        </div>
+                <div class="info">
+                    <div class="title"></div>
+                    <% obj.penname %></div>
+                    <div class="desc"><% obj.description %></div>
+                    <div class="desc"><% obj.fulltime %></div>
+                    <div class="desc"><% obj.parttime %></div>
+                </div>
+                <div class="bottom">
+                    <button class="btn btn-default">ส่อง</button>
+                </div>        
+            </div>        
+    </div>
     </div>
 </setion>
+</div>
 @endsection
 
 @section('script')
