@@ -54,17 +54,16 @@
                             </div>
                         </div>               
                     </div>        
-                    <div class="panel-footerSearch form-center" >
+                    <!-- <div class="panel-footerSearch form-center" >
                         <div>
-                            <button class="btnSearch" type="button" ng-model="check" ng-click="searchPG(searchValue)">
-                                <i class="glyphicon glyphicon-search"></i>
-                                ค้นหา
-                            </button>
+                            
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+                
             </div>    
             </div>
+            
         </div>
             
         <!-- <div ng-repeat="obj in photographyList"></div> -->
