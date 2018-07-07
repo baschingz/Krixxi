@@ -106,7 +106,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="btnSeeProfile">ส่อง</button>
+                            <a href="{{url('/')}}/photographer/<% obj.pg_id %>"> <button class="btnSeeProfile">ส่อง</button>  </a>
                             </div>
                         </div>
                         </div>
