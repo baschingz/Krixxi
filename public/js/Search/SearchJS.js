@@ -26,8 +26,8 @@ app.controller('SearchController', function ($scope, $http) {
             data: e
         }
         $http(req).then(function (response) {
-                debugger;
-                // alert(response.data);
+                // debugger;
+                alert(response.data);
                 $scope.photographyList=response.data;
                 if( $scope.photographyList != null &&  $scope.photographyList.length != 0)
                 {
@@ -39,7 +39,7 @@ app.controller('SearchController', function ($scope, $http) {
                                 
             },
             function (response) {
-                // debugger;
+                debugger;
                 alert('fail');
                 
             }

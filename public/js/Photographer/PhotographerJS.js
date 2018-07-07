@@ -19,11 +19,12 @@ app.controller('PhotographerController', function ($scope, $http) {
 
         $http(req).then(
             function (response) {
-                // debugger;
+                debugger;
                 $scope.photographer = response.data;
-                // alert($scope.photographer);
+                
             },
             function (response) {
+                // debugger;
                 alert('fail');
             }
         );

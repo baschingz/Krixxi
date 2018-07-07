@@ -17,9 +17,13 @@ class PhotographerController extends Controller {
     
     public function getPhotographerById($id) {
         // dd($id);
-        $photoModel = new PhotographerModel();
-        $photoList = $photoModel->getPhotographerById($id);
-        $myJSON = json_encode($photoList);
+        // $photoModel = new PhotographerModel();
+        // $photoList = $photoModel->getPhotographerById($id);
+        $photlist = DB::table('photographer')
+        ->join('location', 'location.loc_id', '=', 'photographer.loc_id')
+        ->select('fullname','profile_img','description','penname','cover_img','fulltime','parttime','location.name')
+        ->where('pg_id','=',$id)->get();
+        $myJSON = json_encode($photlist);
         return $myJSON;
         // return $id;
     }
