@@ -1,10 +1,6 @@
 @extends('layout.main')
 @section('body')
-
-    <!-- ng-repeat="obj in photographer " -->
-
-@endsection
-<div ng-controller="PhotographerController" ng-init="init({{$id}})" >
+    <div ng-controller="PhotographerController" ng-init="init({{$id}})" >
 <div class="card" style="margin-top:-5%;" >
   <img class="card-img" src="<% photographer[0].cover_img %>" style="height:60%;" >
     </div>
@@ -37,8 +33,6 @@
             <img class="card-img" src="{{asset('image/Profile_ex/albam3.jpg')}}" style="height:256;">
         </div>
     </div>
-<<<<<<< HEAD
-=======
 
     <div class="container-fiuid" style="margin-top:30;">
         <div class="col-md-6 col-md-offset-3">
@@ -84,11 +78,9 @@
     </div>
     </div>
 
-@endsection
-<div ng-controller="PhotographerController" ng-init="init({{$id}})">
 
->>>>>>> 73cfa81804a7cd70663535e600b2621b3771eb40
-</div>
+@endsection
+
 @section('script')
 <script src="{{asset('js/Photographer/PhotographerJS.js')}}"></script>
 @endsection
