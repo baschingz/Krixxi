@@ -101,3 +101,46 @@
   padding-top: 0.7em;
 }
 
+.comments-list .media{
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 10;
+}
+
+.btn-comment{
+  display: inline-block;
+  padding: 6px 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: white;
+  border: 1px solid #31b0d5;
+  border-radius: 4px;
+  float: right;
+  color: #31b0d5;
+}
+.btn-comment:hover{
+  background-color: #31b0d5;
+  color: white;
+}
+
+.comment-label{
+  font-size: 22px;
+  font-weight: 400px;
+}
+
+.comment-time{
+  float: right;
+  font-size: 12px;
+  color: grey;
+}
