@@ -26,18 +26,49 @@
          </div>
     </div>
     
-    <div class="card-deck">
-        <div class="card">
-            <img class="card-img"  src="{{asset('image/Profile_ex/albam1.jpg')}}" style="height:256;">
-        </div>
-        <div class="card">
-            <img class="card-img" src="{{asset('image/Profile_ex/albam2.jpg')}}" style="height:256;">
-        </div>
-        <div class="card">
-            <img class="card-img" src="{{asset('image/Profile_ex/albam3.jpg')}}" style="height:256;">
-        </div>
+   <div class="container-fluid album-slide" id="album1">
+   <div class="card" style="border: none; padding-bottom:2%;">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{asset('image/Profile_ex/albam1.jpg')}}" class="albam-size card-img">
+                <div class="card-img-overlay">
+                    <div class="album-title">JAPAN</div>
+                </div>
+                </div>
+            <div class="col-md-8">
+                <h3 class="card-title">Japan</h3>
+                <img src="{{asset('image/Profile_ex/j1.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j2.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j3.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j4.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j5.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j1.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j2.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j3.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j4.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j5.jpg')}}" class="photo-size">
+            </div>
+</div>
+</div>
+<div class="card" style="border: none; padding-bottom:2%;">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{asset('image/Profile_ex/albam2.jpg')}}" class="albam-size card-img">
+                <div class="card-img-overlay">
+                    <div class="album-title">Album</div>
+                </div>
+                </div>
+            <div class="col-md-8">
+                <h3 class="card-title">Album</h3>
+                <img src="{{asset('image/Profile_ex/j1.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j2.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j3.jpg')}}" class="photo-size">
+                <img src="{{asset('image/Profile_ex/j4.jpg')}}" class="photo-size">
+            </div>
+</div>
+</div>
     </div>
-    <div class="container-fiuid" style="margin-top:2%;">
+    <div class="container-fluid" style="margin-top:3%;">
         <div class="col-md-6 col-md-offset-3">
             <label class="comment-label">Comments</label>
                 <div class="media comments-list">
@@ -75,8 +106,14 @@
         $('#comment2').show();
                 
     });
-
+    $(document).ready(function(){
+       var count1 = $('div.album-slide').children().length;
+       if (count1 > 1){
+           $('#album1').css("overflow-y","scroll");
+       }
+   });
 </script>
+    
 
 <script src="{{asset('js/Photographer/PhotographerJS.js')}}"></script>
 @endsection
