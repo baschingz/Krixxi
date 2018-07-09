@@ -19,6 +19,12 @@ app.controller('SearchController', function ($scope, $http) {
     $scope.alert = null;
     $scope.searchPG = function (e) {
         // debugger;
+        if(e.cost == "0")
+        {
+            // alert("กรุณาใส่ราคา");
+            
+            return false;
+        }
         var path = base_path + '/photolist/search';
         var req = {
             method: 'POST',
@@ -27,7 +33,7 @@ app.controller('SearchController', function ($scope, $http) {
         }
         $http(req).then(function (response) {
                 // debugger;
-                alert(response.data);
+                // alert(response.data);
                 $scope.photographyList=response.data;
                 if( $scope.photographyList != null &&  $scope.photographyList.length != 0)
                 {
@@ -46,17 +52,20 @@ app.controller('SearchController', function ($scope, $http) {
         );
     };
 
+
+
     $scope.init = function (page) {
         page = page || null;
         path = base_path + '/getselect';
-
+        // debugger;
         $http.get(path).then(function (response) {
-            
+            // debugger;
             $scope.location = response.data[0];
             $scope.cost = response.data[1];
             $scope.service = response.data[2];
            
         }, function (response) {
+            // debugger;
             alert('fail');
         });
     }

@@ -20,7 +20,7 @@
                                                 <div class="form-group">
                                                     <div class="col-sm-6 form-center1">
                                                         <label class="col-sm-5 control-label  font-style" for="sel1">สถานที่:</label>
-                                                        <select class="form-control col-sm-7" id="sel1"
+                                                        <select class="form-control col-sm-7" 
                                                                 ng-model="searchValue.location">
 
                                                             <option ng-repeat="l in location" value="<% l.loc_id %>"><% l.name %>
@@ -30,11 +30,9 @@
                                                     </div>
                                                     <div class="col-sm-6 form-center1">
                                                         <label class="col-sm-5 control-label  font-style" for="sel1">ราคา:</label>
-                                                        <select class="form-control col-sm-7"
-                                                                ng-model="searchValue.cost" id="sel1">
+                                                        <select class="form-control col-sm-7"  ng-model="searchValue.cost" >
 
-                                                            <option ng-repeat="c in cost" value="<% c.cost_id %>"><% c.detail %>
-                                                            </option>
+                                                            <option ng-repeat="c in cost" value="<% c.cost_id %>"><% c.detail %></option>
 
                                                         </select>
                                                     </div>
@@ -45,8 +43,7 @@
                                                         <select class="form-control col-sm-7"
                                                                 ng-model="searchValue.service">
 
-                                                            <option ng-repeat="s in service" value="<% s.ser_id %>"><% s.detail %>
-                                                            </option>
+                                                            <option ng-repeat="s in service" value="<% s.ser_id %>"><% s.detail %> </option>
 
                                                         </select>
                                                     </div>
@@ -115,6 +112,7 @@
                 </div>
             <!-- </div> -->
         </setion>
+        
     </div>
 @endsection
 
