@@ -19,19 +19,18 @@ class ImageController extends Controller {
     }
 
     public function getAlbumById($id){
-        $albumList = DB::table('album')->where('pg_id','=',$id)->get();
-        // $albumList = DB::table('imagecenter')
-        // ->join('album','album.album_id','=','imagecenter.album_id')
-        // ->join('photographer','photographer.pg_id','=','imagecenter.pg_id')
-        // ->where('photographer.pg_id','=',$id)
-        // ->get();
+        $albumList = DB::table('album')
+        // ->join('imagecenter','imagecenter.album_id','=','album.album_id')
+        ->join('photographer','photographer.pg_id','=','album.pg_id')        
+        ->where('photographer.pg_id','=',$id)
+        ->get(); 
         $myJSON = json_encode($albumList);
         return $myJSON;
     }
 
     public function getImageListById($id){
         $imageList = DB::table('imagecenter')->where('album_id','=',$id)->get();
-        $myJSON = json_encode($albumList);
+        $myJSON = json_encode($imageList);
         return $myJSON;
     }
 }

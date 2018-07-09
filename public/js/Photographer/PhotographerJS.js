@@ -8,7 +8,7 @@ app.controller('PhotographerController', function ($scope, $http) {
 
     $scope.init = function (page) {
         page = page || null;
-        // debugger;
+        debugger;
       
         var id = page;
         var path = base_path + '/photolist/' + id;
@@ -34,15 +34,9 @@ app.controller('PhotographerController', function ($scope, $http) {
  
 
 app.controller('AlbumController', function ($scope, $http) {
-    $scope.Albums = typeof photographers !== "undefined" ? photographers ? photographers : null : null;
-    $scope.Images = typeof photographer !== "undefined" ? photographer ? photographer : null : null;
-
-    $scope.init = function (page) {
-        getAlbum(page);     
-        
-    };
-
-    function getAlbum(page) {
+    $scope.Albums = typeof Albums !== "undefined" ? Albums ? Albums : null : null;
+    $scope.Images = typeof Images !== "undefined" ? Images ? Images : null : null;
+    $scope.getAlbum = function(page) {
         page = page || null;
         debugger;
       
@@ -57,7 +51,8 @@ app.controller('AlbumController', function ($scope, $http) {
             function (response) {
                 debugger;
                 $scope.Albums = response.data;
-                
+               
+               
             },
             function (response) {
                 debugger;
@@ -65,12 +60,12 @@ app.controller('AlbumController', function ($scope, $http) {
             }
         );
     }
-    
-    $scope.getImages = function (page) {
-            page = page || null;
+
+    $scope.getImage=  function (data) {
+        data = data || null;
             debugger;
           
-            var id = page;
+            var id = data;
             var path = base_path + '/getImageList/' + id;
             var req = {
                 method: 'GET',
@@ -81,18 +76,20 @@ app.controller('AlbumController', function ($scope, $http) {
                 function (response) {
                     debugger;
                     $scope.Images = response.data;
-    
-                    
                 },
                 function (response) {
                     debugger;
                     alert('fail');
                 }
             );
-        };
-
+    
+        }
+    
     
 });
+
+
+
 
 
 

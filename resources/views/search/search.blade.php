@@ -48,10 +48,9 @@
                                                     
                                                     <div class="col-sm-6 form-center1">
                                                         <label class="col-sm-5 control-label  font-style">ประเภทงาน:</label>
-                                                        <select class="form-control col-sm-7" 
-                                                                ng-model="searchValue.typeproject" >
+                                                        <select class="form-control col-sm-7" ng-model="searchValue.typeproject" disabled="disabled"  readonly="readonly" >
 
-                                                            <option ng-repeat="p in typeproject" value="<% p.project_id %>"><% p.project_name %></option>
+                                                            <option ng-repeat="p in typeproject"  value="<% p.project_id %>"><% p.project_name %></option>
 
                                                         </select>
                                                     </div>
