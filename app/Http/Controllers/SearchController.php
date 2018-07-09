@@ -12,8 +12,9 @@ class SearchController extends Controller {
         $location = DB::table('location')->get();
         $cost = DB::table('cost')->get();
         $service = DB::table('service')->get();
+        $typeproject = DB::table('typeproject')->get();
 
-        $select = array($location,$cost,$service);
+        $select = array($location,$cost,$service,$typeproject);
         $myJSON = json_encode($select);
         return $myJSON;
         // return 'hi';

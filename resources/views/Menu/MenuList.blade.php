@@ -16,21 +16,21 @@
                     <!-- Loading Screen -->
                     <div data-u="slides" class="slide-cursor">
                         <div data-p="170">
-                            <img data-u="image" src="<% images[0].imgidex_base64 %>"/>
+                            <img data-u="image" src="<% images[0].imgindex_base64 %>"/>
                             <div data-u="caption" data-t="3" class="font-index">Krixxi</div>
                             <div data-u="caption" data-t="3" class="font-index2">Keep memory</div>
                         </div>
                         <div data-p="170">
-                            <img data-u="image" src="<% images[1].imgidex_base64 %>"/>
+                            <img data-u="image" src="<% images[1].imgindex_base64 %>"/>
                         </div>
                         <div data-p="170">
-                            <img data-u="image" src="<% images[2].imgidex_base64 %>"/>
+                            <img data-u="image" src="<% images[2].imgindex_base64 %>"/>
                         </div>
                         <div data-p="170">
-                            <img data-u="image" src="<% images[3].imgidex_base64 %>"/>
+                            <img data-u="image" src="<% images[3].imgindex_base64 %>"/>
                         </div>
                         <div data-p="170">
-                            <img data-u="image" src="<% images[4].imgidex_base64 %>"/>
+                            <img data-u="image" src="<% images[4].imgindex_base64 %>"/>
                         </div>
                     </div>
                     <!-- Bullet Navigator -->

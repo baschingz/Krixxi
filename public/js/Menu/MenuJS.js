@@ -13,7 +13,7 @@ app.controller('MenuController', function ($scope, $http) {
         var path = base_path + '/imglist';
         $http.get(path).then(
             function (response) {
-                // debugger;
+                debugger;
                 // alert(response.data[0].imgidex_id);
                 $scope.images = response.data;
                 return $scope.images;

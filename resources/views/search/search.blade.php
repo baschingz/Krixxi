@@ -19,27 +19,25 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <div class="col-sm-6 form-center1">
-                                                        <label class="col-sm-5 control-label  font-style" for="sel1">สถานที่:</label>
-                                                        <select class="form-control col-sm-7" 
-                                                                ng-model="searchValue.location">
+                                                        <label class="col-sm-5 control-label  font-style" >สถานที่:</label>
+                                                        <select class="form-control col-sm-7" ng-model="searchValue.location">
 
-                                                            <option ng-repeat="l in location" value="<% l.loc_id %>"><% l.name %>
-                                                            </option>
+                                                            <option ng-repeat="l in location" value="<% l.loc_id %>"><% l.name %>  </option>
 
                                                         </select>
-                                                    </div>
+                                                    </div>                                                    
                                                     <div class="col-sm-6 form-center1">
-                                                        <label class="col-sm-5 control-label  font-style" for="sel1">ราคา:</label>
-                                                        <select class="form-control col-sm-7"  ng-model="searchValue.cost" >
+                                                        <label class="col-sm-5 control-label  font-style">ราคา:</label>
+                                                        <select class="form-control col-sm-7" ng-model="searchValue.cost" >
 
-                                                            <option ng-repeat="c in cost" value="<% c.cost_id %>"><% c.detail %></option>
+                                                            <option ng-repeat="c in cost" value="<% c.cost_id %>"><% c.detail %>  </option>
 
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="col-sm-6 form-center1">
-                                                        <label class="col-sm-5 control-label font-style" for="sel1">รูปแบบ:</label>
+                                                        <label class="col-sm-5 control-label font-style" >รูปแบบ:</label>
                                                         <select class="form-control col-sm-7"
                                                                 ng-model="searchValue.service">
 
@@ -47,8 +45,19 @@
 
                                                         </select>
                                                     </div>
+                                                    
                                                     <div class="col-sm-6 form-center1">
-                                                        <label class="col-sm-5 control-label font-stylel" for="sel1">วัน-เวลา:</label>
+                                                        <label class="col-sm-5 control-label  font-style">ประเภทงาน:</label>
+                                                        <select class="form-control col-sm-7" 
+                                                                ng-model="searchValue.typeproject" >
+
+                                                            <option ng-repeat="p in typeproject" value="<% p.project_id %>"><% p.project_name %></option>
+
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-sm-6 form-center1">
+                                                        <label class="col-sm-5 control-label font-stylel" >วัน-เวลา:</label>
                                                         <input type="text" class="form-control col-sm-7 form-search"
                                                                id="datePicker" ng-model="searchValue.date" readonly="readonly">
                                                     </div>
