@@ -17,4 +17,16 @@ class ImageController extends Controller {
         // return 1;
         // return view('menu.MenuList',compact('imglist'));
     }
+
+    public function getAlbumById($id){
+        $albumList = DB::table('album')->where('pg_id','=',$id)->get();
+        $myJSON = json_encode($albumList);
+        return $myJSON;
+    }
+
+    public function getImageListByAlumId($id){
+        $imageList = DB::table('imagecenter')->where('album_id','=',$id)->get();
+        $myJSON = json_encode($albumList);
+        return $myJSON;
+    }
 }

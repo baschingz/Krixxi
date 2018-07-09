@@ -15,6 +15,7 @@
             <li><span class="glyphicon glyphicon-user" aria-hidden="true">  Name     :  <% photographer[0].fullname %></span></li>
             <li><span class="glyphicon glyphicon-globe" aria-hidden="true"> Region    :   <% photographer[0].name %></span></li>
             <li><span class="glyphicon glyphicon-phone" aria-hidden="true"> TEL    :  </span></li>
+            <a href="<% photographer[0].facebook %> " target="_blank"><li><span class="fa fa-facebook-square" aria-hidden="true"> Facebook    :  <% photographer[0].facebook %></span></li></a>
                 </ul>
          </div>
          <div class="col-md-3" style="padding-top:8%;">
@@ -26,46 +27,25 @@
          </div>
     </div>
     
-   <div class="container-fluid album-slide" id="album1">
-   <div class="card" style="border: none; padding-bottom:2%;">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="{{asset('image/Profile_ex/albam1.jpg')}}" class="albam-size card-img">
-                <div class="card-img-overlay">
-                    <div class="album-title">JAPAN</div>
+   <div class="container-fluid album-slide" id="album1" ng-controller="AlbumController" ng-init="init({{$id}})" >
+    
+        <div class="card" style="border: none; padding-bottom:2%;" ng-repeat="al in Albums" >
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="<% al.cover %>" class="albam-size card-img">
+                        <div class="card-img-overlay">
+                        <div class="album-title"><% al.album_name %></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="card-title"><% al.album_name %></h3>
+                        <div  ></div>
+                        <img src="{{asset('image/Profile_ex/j1.jpg')}}" class="photo-size" ng-repeat="">
+                      
+                    </div>
                 </div>
-                </div>
-            <div class="col-md-8">
-                <h3 class="card-title">Japan</h3>
-                <img src="{{asset('image/Profile_ex/j1.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j2.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j3.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j4.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j5.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j1.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j2.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j3.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j4.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j5.jpg')}}" class="photo-size">
             </div>
-</div>
-</div>
-<div class="card" style="border: none; padding-bottom:2%;">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="{{asset('image/Profile_ex/albam2.jpg')}}" class="albam-size card-img">
-                <div class="card-img-overlay">
-                    <div class="album-title">Album</div>
-                </div>
-                </div>
-            <div class="col-md-8">
-                <h3 class="card-title">Album</h3>
-                <img src="{{asset('image/Profile_ex/j1.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j2.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j3.jpg')}}" class="photo-size">
-                <img src="{{asset('image/Profile_ex/j4.jpg')}}" class="photo-size">
-            </div>
-</div>
+
 </div>
     </div>
     <div class="container-fluid" style="margin-top:3%;">

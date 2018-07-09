@@ -21,7 +21,7 @@ class PhotographerController extends Controller {
         // $photoList = $photoModel->getPhotographerById($id);
         $photlist = DB::table('photographer')
         ->join('location', 'location.loc_id', '=', 'photographer.loc_id')
-        ->select('fullname','profile_img','description','penname','cover_img','fulltime','parttime','location.name','tel')
+        ->select('fullname','profile_img','description','penname','cover_img','fulltime','parttime','location.name','tel','facebook')
         ->where('pg_id','=',$id)->get();
         $myJSON = json_encode($photlist);
         return $myJSON;

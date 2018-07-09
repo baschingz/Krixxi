@@ -35,7 +35,7 @@ app.controller('SearchController', function ($scope, $http) {
             data: e
         }
         $http(req).then(function (response) {
-                // debugger;
+                debugger;
                 // alert(response.data);
                 $scope.photographyList=response.data;
                 if( $scope.photographyList != null &&  $scope.photographyList.length != 0)
@@ -43,6 +43,7 @@ app.controller('SearchController', function ($scope, $http) {
                     $scope.check = true;
                 }
                 else{
+                    // debugger;
                     alert("ไม่พบข้อมูลช่างภาพที่ค้นหา");
                 }                
                                 
