@@ -39,8 +39,8 @@
                     </div>
                     <div class="col-md-8">
                         <h3 class="card-title"><% al.album_name %></h3>
-                        <div  ></div>
-                        <img src="{{asset('image/Profile_ex/j1.jpg')}}" class="photo-size" ng-repeat="">
+                        <div ng-mouseover="getImages(<% al.album_id %>)" ></div>
+                        <img src="<% img.imagecenter_base64 %>" class="photo-size" ng-repeat="img in images">
                       
                     </div>
                 </div>

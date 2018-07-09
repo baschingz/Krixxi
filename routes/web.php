@@ -43,4 +43,4 @@ Route::get('getselect', 'SearchController@getSelect');
 
 Route::get('getAlbum/{id}', 'ImageController@getAlbumById');
 
-Route::get('getImageList/{id}', 'ImageController@getImageListByAlumId');
+Route::get('getImageList/{id}', 'ImageController@getImageListById');

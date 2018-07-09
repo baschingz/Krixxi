@@ -38,7 +38,7 @@ app.controller('AlbumController', function ($scope, $http) {
     $scope.Images = typeof photographer !== "undefined" ? photographer ? photographer : null : null;
 
     $scope.init = function (page) {
-        getAlbum(page);        
+        getAlbum(page);     
         
     };
 
@@ -66,8 +66,7 @@ app.controller('AlbumController', function ($scope, $http) {
         );
     }
     
-
-    function Images(page) {
+    $scope.getImages = function (page) {
             page = page || null;
             debugger;
           
