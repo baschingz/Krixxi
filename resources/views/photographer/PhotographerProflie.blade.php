@@ -1,4 +1,4 @@
-@extends('layout.main')
+﻿@extends('layout.main')
 @section('body')
 <div ng-controller="PhotographerController" ng-init="init({{$id}})" >
     <div class="card" style="margin-top:-5%;" >
@@ -37,7 +37,7 @@
                             </div> 
                         </div>
                             <div class="col-md-8">
-                                <h3 class="card-title" ng-init="getImage(2)"><% al.album_name %></h3>
+                                <h3 class="card-title" ng-init="getImage(<% al.album_id %>)"><% al.album_name %></h3>
                                     <img src="<% img.imagecenter_base64 %>" class="photo-size" ng-repeat="img in Images">
                             </div>
                             

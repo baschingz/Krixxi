@@ -77,6 +77,6 @@ app.controller('SearchController', function ($scope, $http) {
 });
 
 $(function () {
-    $('#search').slideDown("slow");
+    $('#search').slideDown(1500);
 
 });
