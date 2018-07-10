@@ -29,7 +29,8 @@ class ImageController extends Controller {
     }
 
     public function getImageListById($id){
-        $imageList = DB::table('imagecenter')->where('album_id','=',$id)->get();
+        
+        $imageList = DB::table('imagecenter')->where('gp_id','=',$id)->get();
         $myJSON = json_encode($imageList);
         return $myJSON;
     }
