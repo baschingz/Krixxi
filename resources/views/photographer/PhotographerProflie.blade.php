@@ -12,7 +12,7 @@
             <div class="h1"><% photographer[0].penname %></div>
                 <div style="font-size:20pxฎฏ;"> Detail : <% photographer[0].description %></div>
                     <ul class="list-unstyled" style="font-size:16px;">
-                        <li><span class="glyphicon glyphicon-user" aria-hidden="true">  Name     :  <% photographer[0].fullname %></span></li>
+                        <li><span class="glyphicon glyphicon-user" aria-hidden="true" mg-model="">  Name     :  <%  photographer[0].fullname %></span></li>
                         <li><span class="glyphicon glyphicon-globe" aria-hidden="true"> Region    :   <% photographer[0].name %></span></li>
                         <li><span class="glyphicon glyphicon-phone" aria-hidden="true"> TEL    :  </span></li>
                         <a href="<% photographer[0].facebook %> " target="_blank"><li><span class="fa fa-facebook-square" aria-hidden="true"> Facebook    :  <% photographer[0].facebook %></span></li></a>
