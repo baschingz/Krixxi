@@ -10,17 +10,14 @@ class ImageController extends Controller {
 
     public function getImageList() {
         $imgModel = new imageModel();
-        $imglist = $imgModel->getImageList();
-        // dd($imglist);
+        $imglist = $imgModel->getImageList();        
         $myJSON = json_encode($imglist);
         return $myJSON;
-        // return 1;
-        // return view('menu.MenuList',compact('imglist'));
+       
     }
 
     public function getAlbumById($id){
         $albumList = DB::table('album')
-        // ->join('imagecenter','imagecenter.album_id','=','album.album_id')
         ->join('photographer','photographer.pg_id','=','album.pg_id')        
         ->where('photographer.pg_id','=',$id)
         ->get(); 
