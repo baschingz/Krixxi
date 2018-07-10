@@ -40,7 +40,6 @@ class ImageController extends Controller {
         $albumSize = sizeof($album);
         for($i=0;$i<$albumSize;$i++)
         {
-            
             $albumlist[] = array('albumcover'=>$album[$i]->cover,'albumname'=>$album[$i]->album_name);
             for($j=$i;$j<sizeof($imageList);$j++){
                 if($imageList[$i]->album_id == $imageList[$j]->album_id){   

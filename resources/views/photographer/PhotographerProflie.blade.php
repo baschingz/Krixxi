@@ -27,6 +27,8 @@
                     </ul>
                 </div>
             </div>
+            
+            <!-- ------------Album------------ -->
         
         <div class="container-fluid album-slide" id="album1" ng-controller="AlbumController" ng-init="getImage({{$id}})" >
             <div class="card" style="border: none; padding-bottom:2%;" ng-repeat="imgs in Images" >
@@ -48,6 +50,8 @@
                         </div>
                     </div>
                 </div>
+                
+            <!-- ------------Album------------ -->
     </div>
 </div>
 
