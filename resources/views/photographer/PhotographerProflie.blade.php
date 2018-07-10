@@ -1,5 +1,6 @@
 ﻿@extends('layout.main')
 @section('body')
+<div id="form1">
 <div ng-controller="PhotographerController" ng-init="init({{$id}})" >
     <div class="card" style="margin-top:-5%;" >
         <img class="card-img cover-img" src="<% photographer[0].cover_img %>">
@@ -27,24 +28,29 @@
                 </div>
             </div>
         
-        <div class="container-fluid album-slide" id="album1" ng-controller="AlbumController" ng-init="getAlbum({{$id}})" >
-            <div class="card" style="border: none; padding-bottom:2%;" ng-repeat="al in Albums" >
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="<% al.cover %>" class="albam-size card-img">
+        <div class="container-fluid album-slide" id="album1" ng-controller="AlbumController" ng-init="getImage({{$id}})" >
+            <div class="card" style="border: none; padding-bottom:2%;" ng-repeat="imgs in Images" >
+                <div class="row"  ng-repeat="img in imgs">
+                    <div class="col-md-4" >
+                        <img  src="<% img[0].albumcover %>"  class="albam-size card-img">
                         <div class="card-img-overlay">
-                            <div class="album-title"><%al.album_name %></div>
+                            <div class="album-title"><% img[0].albumname %></div>
                             </div> 
                         </div>
                             <div class="col-md-8">
-                                <h3 class="card-title" ng-init="getImage({{$id}})"><% al.album_name %></h3>
-                                    <img src="<% img.imagecenter_base64 %>" class="photo-size" ng-repeat="img in Images">
+                                <h3 class="card-title"><% img[0].albumname %></h3>
+                                <div ng-repeat="imgall in img[1]">
+                                    <img  ng-repeat="imgb64 in imgall" src="<% imgb64.imgBase64 %>" class="photo-size">
+                                </div>
+                                    
                             </div>
                             
                         </div>
                     </div>
                 </div>
+    </div>
 </div>
+
                 <div class="container-fluid" style="margin-top:3%;">
                     <div class="col-md-6 col-md-offset-3">
                         <label class="comment-label">Comments</label>
