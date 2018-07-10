@@ -195,9 +195,10 @@
    text-align: center;
  }
 
+ /* for card size*/
  .cover-img{
    height: 400px;
    object-fit: cover;
  }
-
+ /* end for card size*/
  

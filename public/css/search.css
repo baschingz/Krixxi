@@ -295,6 +295,8 @@
     background-color: #48bfe3;
     height: 40px;
     width: 100%;
+    position: absolute;
+    bottom: 0px;
   }
   
   .btnSeeProfile:hover{
@@ -302,10 +304,18 @@
     color: white;
     height: 40px;
     width: 100%;
+    position: absolute;
+    bottom: 0px;
   }
 
   .img-cover1{
     width: 100%;
     height :10%;
+  }
+  
+    /* for card size*/
+  .border-card{
+    height: 550px;
+    max-height: 550px;
   }
 /*end crad profile*/
