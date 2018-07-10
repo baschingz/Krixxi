@@ -17,7 +17,7 @@ class SearchController extends Controller {
         $select = array($location,$cost,$service,$typeproject);
         $myJSON = json_encode($select);
         return $myJSON;
-        // return 'hi';
+        
     }
 
 }

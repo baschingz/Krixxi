@@ -6,9 +6,10 @@ app.controller('PhotographerController', function ($scope, $http) {
     $scope.photographers = typeof photographers !== "undefined" ? photographers ? photographers : null : null;
     $scope.photographer = typeof photographer !== "undefined" ? photographer ? photographer : null : null;
 
+    
     $scope.init = function (page) {
         page = page || null;
-        debugger;
+        // debugger;
       
         var id = page;
         var path = base_path + '/photolist/' + id;
@@ -29,6 +30,7 @@ app.controller('PhotographerController', function ($scope, $http) {
             }
         );
     };
+
 });
 
  
@@ -38,7 +40,7 @@ app.controller('AlbumController', function ($scope, $http) {
     $scope.Images = typeof Images !== "undefined" ? Images ? Images : null : null;
     $scope.getAlbum = function(page) {
         page = page || null;
-        debugger;
+        // debugger;
       
         var id = page;
         var path = base_path + '/getAlbum/' + id;
@@ -49,13 +51,11 @@ app.controller('AlbumController', function ($scope, $http) {
 
         $http(req).then(
             function (response) {
-                debugger;
+                // debugger;
                 $scope.Albums = response.data;
-               
-               
             },
             function (response) {
-                debugger;
+                // debugger;
                 alert('fail');
             }
         );
@@ -90,7 +90,11 @@ app.controller('AlbumController', function ($scope, $http) {
 
 
 
+$(function () {
 
+    $('#form1').slideDown(1500);
+
+});
 
 
 

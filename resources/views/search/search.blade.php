@@ -5,6 +5,7 @@
 
 @endsection
 @section('body')
+
     <div ng-controller="SearchController">
         <section class="bg-search">
             <div ng-form ng-init="init()">

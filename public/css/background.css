@@ -171,10 +171,18 @@
 }
 
 .photo-size{
-  width: 165px;
-  height: 110px;
-  padding-right: 2px;
-  padding-bottom: 3px;
+  object-fit: cover;
+  width:180px;
+  height: 180px;
+  max-width: 250px;
+  max-height: 100px;
+}
+
+.border-img{
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -8%;
 }
 
 .album-slide{

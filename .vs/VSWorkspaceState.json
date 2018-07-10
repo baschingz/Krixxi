@@ -9,8 +9,8 @@
     "\\public\\js",
     "\\resources",
     "\\resources\\views",
-    "\\resources\\views\\Photographer"
+    "\\resources\\views\\photographer"
   ],
-  "SelectedNode": "\\app\\Model\\PhotographerModel.php",
+  "SelectedNode": "\\resources\\views\\photographer\\PhotographerProflie.blade.php",
   "PreviewInSolutionExplorer": false
 }
