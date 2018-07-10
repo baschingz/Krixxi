@@ -1,8 +1,8 @@
-﻿@extends('layout.main')
+@extends('layout.main')
 @section('body')
 <div ng-controller="PhotographerController" ng-init="init({{$id}})" >
     <div class="card" style="margin-top:-5%;" >
-        <img class="card-img" src="<% photographer[0].cover_img %>" style="height:60%;" >
+        <img class="card-img cover-img" src="<% photographer[0].cover_img %>">
     </div>
     <div class="container-fluid" style="padding-top:1%; padding-bottom:2%;">
         <div class="col-md-3 col-md-offset-1">
@@ -35,11 +35,12 @@
                         <div class="card-img-overlay">
                             <div class="album-title"><%al.album_name %></div>
                             </div> 
+                        </div>
                             <div class="col-md-8">
                                 <h3 class="card-title" ng-init="getImage(2)"><% al.album_name %></h3>
                                     <img src="<% img.imagecenter_base64 %>" class="photo-size" ng-repeat="img in Images">
                             </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

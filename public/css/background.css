@@ -150,11 +150,18 @@
   height: 256px;
   border-radius: 50%;
 }
+
+.photographer-position{
+  position: relative;
+  margin-top: 15px;
+  z-index: 100;
+}
 .comment-avatar{
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
+
 
 .albam-size{
   width: 400px;
@@ -179,3 +186,10 @@
    padding-top: 30%;
    text-align: center;
  }
+
+ .cover-img{
+   height: 400px;
+   object-fit: cover;
+ }
+
+ 
