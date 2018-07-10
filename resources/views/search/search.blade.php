@@ -65,7 +65,7 @@
                                                     </div>
 
                                                     <div class="col-sm-6 form-center1">
-                                                        <label class="col-sm-5 control-label font-stylel">วัน-เวลา:</label>
+                                                        <label class="col-sm-5 control-label font-style ">วัน-เวลา:</label>
                                                         <input type="text" class="form-control col-sm-7 form-search"
                                                                id="datePicker" ng-model="searchValue.date"
                                                                readonly="readonly">
@@ -147,9 +147,20 @@
             <!-- </div> -->
         </setion>
     </div>
+    
+<div id="loader1"></div>
+
 @endsection
 
 @section('script')
 
     <script src="{{asset('js/Search/SearchJS.js')}}"></script>
+    <script>
+    $(function () {
+        $('#div1').slideDown("slow");
+
+    });
+</script>
+
+
 @endsection

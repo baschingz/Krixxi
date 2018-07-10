@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 <!-- <link rel="stylesheet" type="text/css" href="{{asset('css/docs.min.css')}}"/> -->
 </head>
-<body class="bg-welcome" onload="hide()">
+<body class="bg-welcome">
 <div id="div1" style="margin-top:10%;" hidden>
     <div class="container">
         <div class="col-sm-12">
@@ -83,13 +83,6 @@
     </div>
 </div>
 
-  <div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
-  <h2>Tada!</h2>
-  <p>Some text in my newly loaded page..</p>
-</div>
-
 </body>
 <script>
     $(function () {
@@ -98,21 +91,6 @@
     });
 </script>
 
-<script>
-var myVar;
-
-function timeload() {
-    document.getElementById("loader").style.visibility = "visible";
-    myVar = setTimeout(showPage, 2000);
-}
-
-function hide(){
-    document.getElementById("loader").style.visibility = "hidden";
-}
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-}
-</script>
 </html>
 
 
