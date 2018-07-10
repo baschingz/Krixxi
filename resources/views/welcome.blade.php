@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
     <link rel="icon" href="{{asset('image/icon/Icon-20.png')}}" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/loading.css')}}"/>
     <!-- Latest compiled and minified CSS -->
     <title>Krixxi</title>
 
@@ -19,14 +20,14 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
 <!-- <link rel="stylesheet" type="text/css" href="{{asset('css/docs.min.css')}}"/> -->
 </head>
-<body class="bg-welcome">
+<body class="bg-welcome" onload="hide()">
 <div id="div1" style="margin-top:10%;" hidden>
     <div class="container">
         <div class="col-sm-12">
             <div class="col-sm-7" style="margin-top:5%; color:white;">
                 <div class="font-welcomepage1">Krixxi</div>
                 <div class="font-welcomepage2">Keep memory</div>
-                <a href="menu" class="btn btn-default margin-top">Get Start</a>
+                <a href="menu" class="btn btn-default margin-top" onclick="timeload()">Get Start</a>
             </div>
             <div class="col-sm-5">
                 <div style="margin-top:7%;"></div>
@@ -82,6 +83,12 @@
     </div>
 </div>
 
+  <div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h2>Tada!</h2>
+  <p>Some text in my newly loaded page..</p>
+</div>
 
 </body>
 <script>
@@ -89,6 +96,22 @@
         $('#div1').slideDown("slow");
 
     });
+</script>
+
+<script>
+var myVar;
+
+function timeload() {
+    document.getElementById("loader").style.visibility = "visible";
+    myVar = setTimeout(showPage, 2000);
+}
+
+function hide(){
+    document.getElementById("loader").style.visibility = "hidden";
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+}
 </script>
 </html>
 
