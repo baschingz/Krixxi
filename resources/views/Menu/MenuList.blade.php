@@ -22,15 +22,22 @@
                         </div>
                         <div data-p="170">
                             <img data-u="image" src="<% images[1].imgindex_base64 %>"/>
+                            <div data-u="caption" data-t="3" class="font-index">Krixxi</div>
+                            <div data-u="caption" data-t="3" class="font-index3">คลิกทุกสเต็ป ตอบโจทย์ทุกสไตล์</div>
                         </div>
                         <div data-p="170">
                             <img data-u="image" src="<% images[2].imgindex_base64 %>"/>
+                            <div data-u="caption" data-t="3" class="font-index4">รับปริญญาหนึ่งครั้งในชีวิต ฝากความทรงจำไว้ที่เรา</div>
+                            <div data-u="caption" data-t="3" class="font-index5">krixxi keep memory</div>
                         </div>
                         <div data-p="170">
                             <img data-u="image" src="<% images[3].imgindex_base64 %>"/>
+                            <div data-u="caption" data-t="3" class="font-index6">Your memory</div>
+                            <div data-u="caption" data-t="3" class="font-index7">Our memory</div>
                         </div>
                         <div data-p="170">
                             <img data-u="image" src="<% images[4].imgindex_base64 %>"/>
+                            <div data-u="caption" data-t="3" class="font-index8">ตอบโจทย์ทุกสไตล์</div>
                         </div>
                     </div>
                     <!-- Bullet Navigator -->

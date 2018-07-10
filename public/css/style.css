@@ -127,3 +127,79 @@
   color:rgb(255, 255, 255);
   font-family: 'Yantramanav', sans-serif;
 }
+
+.font-index3{
+  top:85%;
+  position:absolute;
+  width:470px;
+  height:40px;
+  font-size:2em;
+  font-weight:500;
+  line-height:1.2;
+  text-align:center;
+  color:rgb(255, 255, 255);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 200;
+  margin-left: 2.4em;
+}
+
+.font-index4{
+  position:absolute;
+  top:60%;
+  width:100%;
+  height:40px;
+  font-size: 1.5em;
+  font-weight:500;
+  line-height:1.5;
+  text-align:center;
+  color:#333;
+}
+
+.font-index5{
+  position:absolute;
+  top:61%;
+  width:100%;
+  height:40px;
+  font-size:3.6em;
+  font-weight:500;
+  line-height:1.5;
+  color:#333;
+  text-align:center;
+}
+.font-index6{
+  position:absolute;
+  top:1.7em;
+  width:95%;
+  height:40px;
+  font-size:2em;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight:200;
+  line-height:1.2;
+  text-align:right;
+  color:rgb(255, 255, 255);
+  
+}
+.font-index7{
+  position:absolute;
+  top:15%;
+  width:95%;
+  height:40px;
+  font-size:2em;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight:200;
+  line-height:1.2;
+  text-align:right;
+  color:#333;
+}
+
+.font-index8{
+  position:absolute;
+  top:65%;
+  width:80%;
+  height:40px;
+  font-size:2em;
+  font-weight:200;
+  line-height:1.2;
+  text-align:right;
+  color:rgb(255, 255, 255);
+}
