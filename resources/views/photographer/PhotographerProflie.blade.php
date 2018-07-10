@@ -10,7 +10,7 @@
         </div>
         <div class="col-md-4" style="padding-top:3%;">
             <div class="h1"><% photographer[0].penname %></div>
-                <div style="font-size:20pxฎฏ;"> Detail : <% photographer[0].description %></div>
+                <div style="font-size:20px;"> Detail : <% photographer[0].description %></div>
                     <ul class="list-unstyled" style="font-size:16px;">
                         <li><span class="glyphicon glyphicon-user" aria-hidden="true">  Name     :  <% photographer[0].fullname %></span></li>
                         <li><span class="glyphicon glyphicon-globe" aria-hidden="true"> Region    :   <% photographer[0].name %></span></li>
