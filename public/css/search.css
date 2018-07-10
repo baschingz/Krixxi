@@ -210,6 +210,7 @@
     height: 15em;
     /* background-size: cover; */
     overflow:hidden;
+    object-fit: cover;
 }
 
 .card.hovercard .avatar {

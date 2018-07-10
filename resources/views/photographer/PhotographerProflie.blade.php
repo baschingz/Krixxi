@@ -6,33 +6,40 @@
                 <img class="card-img cover-img" src="<% photographer[0].cover_img %>">
             </div>
             <div class="container-fluid" style="padding-top:1%; padding-bottom:2%;">
-                <div class="col-md-3 col-md-offset-1">
+                <div class="col-sm-3 col-sm-offset-1">
                     <img src="<% photographer[0].profile_img %>" class="photographer-avatar">
                 </div>
-                <div class="col-md-4" style="padding-top:3%;">
-                    <div class="h1"><% photographer[0].penname %></div>
-                    <div style="font-size:20pxฎฏ;"> Detail : <% photographer[0].description %></div>
-                    <ul class="list-unstyled" style="font-size:16px;">
-                        <li><span class="glyphicon glyphicon-user" aria-hidden="true" mg-model="">  Name     :  <%  photographer[0].fullname %></span>
-                        </li>
-                        <li><span class="glyphicon glyphicon-globe" aria-hidden="true"> Region    :   <% photographer[0].name %></span>
-                        </li>
-                        <!-- <li><span class="glyphicon glyphicon-phone" aria-hidden="true"> TEL    :  </span></li>
-                        <a href="<% photographer[0].facebook %> " target="_blank">
-                            <li><span class="fa fa-facebook-square" aria-hidden="true"> Facebook    :  <% photographer[0].facebook %></span>
-                            </li>
-                        </a> -->
-                    </ul>
+                <div class="col-sm-5" style="padding-top:3%; font-size:18px;">
+                    <div class="font-topic-penname"><% photographer[0].penname %></div>
+                    <div> Detail : <span class="weight"><% photographer[0].description %></span></div>
+                    <div class="col-sm-12 row" >
+                        <li class="glyphicon glyphicon-user"></li> Name     :  
+                        <span class="weight"> 
+                            <%  photographer[0].fullname %>
+                        </span>
+                    </div>
+                    <div class="col-sm-12 row">
+                        <li class="glyphicon glyphicon-globe"></li> Region    : 
+                        <span class="weight">   
+                            <% photographer[0].name %>
+                        </span>
+                    </div>
                 </div>
-                <div class="col-md-3" style="padding-top:8%;">
-                    <div style="font-size:20px;">Rate</div>
-                    <ul class="list-unstyled" style="font-size:16px;">
-                        <li><span class="glyphicon glyphicon-camera" aria-hidden="true"> Half    :  <% photographer[0].parttime %></span>
-                        </li>
-                        <li><span class="glyphicon glyphicon-camera" aria-hidden="true"> Full    :  <% photographer[0].fulltime %></span>
-                        </li>
-                    </ul>
-                </div>
+                <div class="col-sm-3" style="padding-top:6.2em; font-size:18px;">
+                    <div>Rate</div>
+                    <div class="col-sm-12 row">
+                        <li class="glyphicon glyphicon-camera"></li> Half&nbsp;:  
+                        <span class="weight">   
+                            <% photographer[0].parttime %>
+                        </span>
+                    </div>
+                    <div class="col-sm-12 row">
+                        <li class="glyphicon glyphicon-camera"></li> Full&nbsp;&nbsp;:  
+                        <span class="weight">   
+                            <% photographer[0].fulltime %>
+                        </span>
+                    </div>
+                </div>                
             </div>
 
             <!-- ------------Album------------ -->

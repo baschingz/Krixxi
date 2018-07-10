@@ -195,10 +195,21 @@
    text-align: center;
  }
 
- /* for card size*/
  .cover-img{
    height: 400px;
    object-fit: cover;
  }
- /* end for card size*/
- 
+
+ .font-info{
+  font-family: 'Kanir', sans-serif;
+  font-size:18px;
+ }
+
+ .weight{
+   font-weight: 200;
+ }
+
+ .font-topic-penname{
+   color: #114c5e;
+   font-size: 40px;
+ }
