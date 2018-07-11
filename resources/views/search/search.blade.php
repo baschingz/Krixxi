@@ -65,7 +65,7 @@
                                                     </div>
 
                                                     <div class="col-sm-6 form-center1">
-                                                        <label class="col-sm-5 control-label font-stylel">วัน-เวลา:</label>
+                                                        <label class="col-sm-5 control-label font-style ">วัน-เวลา:</label>
                                                         <input type="text" class="form-control col-sm-7 form-search"
                                                                id="datePicker" ng-model="searchValue.date"
                                                                readonly="readonly">
@@ -93,7 +93,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-sm-6" ng-repeat="obj in photographyList">
-                        <div class="card hovercard">
+                        <div class="card hovercard border-card">
                             <div class="cardheader">
                                 <img src="<% obj.cover_img %>"/>
                             </div>
@@ -103,43 +103,37 @@
                             </div>
                             <div class="info">
                                 <div class="title row">
-                                    <div class="col-sm-1">
+                                    <div class="col-sm-12">
                                         <i class="glyphicon glyphicon-camera"></i>
-                                    </div>
-                                    <div class="col-sm-11">
                                         <% obj.penname %>       
                                     </div>
                                 </div>
                                 <div class="desc row">
-                                    <div class="col-sm-1">
+                                    <div class="col-sm-12">
                                         <i class="glyphicon glyphicon-list-alt"></i>
-                                    </div>
-                                    <div class="col-sm-11">
                                         <% obj.description %>
                                     </div>
                                 </div>
                                 <div class="desc row">
-                                    <div class="col-sm-1">
+                                    <div class="col-sm-12">
                                         <i class="glyphicon glyphicon glyphicon-time"></i>
-                                    </div>
-                                    <div class="col-sm-11">
                                         Fulltime : <% obj.fulltime %>
                                     </div>
                                 </div>
                                 <div class="desc row">
-                                    <div class="col-sm-1">
+                                    <div class="col-sm-12">
                                         <i class="glyphicon glyphicon glyphicon-time"></i>
-                                    </div>
-                                    <div class="col-sm-11">
                                         Parttime : <% obj.parttime %>
                                     </div>
                                 </div>
-                                <div class="desc center2">
-                                    <i class="glyphicon glyphicon-star star-color"></i>
-                                    <i class="glyphicon glyphicon-star star-color"></i>
-                                    <i class="glyphicon glyphicon-star star-color"></i>
-                                    <i class="glyphicon glyphicon-star star-color"></i>
-                                    <i class="glyphicon glyphicon-star star-color"></i>
+                                <div class="desc center2 row">
+                                    <div class="col-sm-12">
+                                        <i class="glyphicon glyphicon-star star-color"></i>
+                                        <i class="glyphicon glyphicon-star star-color"></i>
+                                        <i class="glyphicon glyphicon-star star-color"></i>
+                                        <i class="glyphicon glyphicon-star star-color"></i>
+                                        <i class="glyphicon glyphicon-star star-color"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div>
@@ -153,9 +147,20 @@
             <!-- </div> -->
         </setion>
     </div>
+    
+<div id="loader1"></div>
+
 @endsection
 
 @section('script')
 
     <script src="{{asset('js/Search/SearchJS.js')}}"></script>
+    <script>
+    $(function () {
+        $('#div1').slideDown("slow");
+
+    });
+</script>
+
+
 @endsection

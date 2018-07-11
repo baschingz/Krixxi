@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/loading.css')}}"/>
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/all.css')}}" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -23,7 +24,7 @@
           rel="stylesheet" type="text/css"/>
     @yield('import')
 </head>
-<body class="bg-menu">
+<body class="bg-menu" onload="timeload()">
 <!-- <header style="margin-bottom:50px;">-->
 <header class="margin-bottom-menu">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -74,6 +75,7 @@
             </div>
         </div>
     </footer>
+    <div id="loader"></div>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
@@ -81,6 +83,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
 <script type="text/javascript">
     var base_path = "{{url('/')}}";
+</script>
+
+<script>
+var myVar;
+
+function timeload() {
+    myVar = setTimeout(showPage, 200);
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+}
 </script>
 @yield('script')
 
