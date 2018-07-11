@@ -151,11 +151,6 @@
   border-radius: 50%;
 }
 
-.photographer-position{
-  position: relative;
-  margin-top: 15px;
-  z-index: 100;
-}
 .comment-avatar{
   width: 64px;
   height: 64px;
@@ -187,8 +182,10 @@
 
 .album-slide{
   height: 330px;
-  overflow-x: hidden;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
+
  .album-title{
    font-size: 36px;
    padding-top: 30%;

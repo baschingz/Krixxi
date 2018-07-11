@@ -1,4 +1,4 @@
-﻿@extends('layout.main')
+@extends('layout.main')
 @section('body')
     <div id="form1">
         <div ng-controller="PhotographerController" ng-init="init({{$id}})">
@@ -59,11 +59,12 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- ------------Album------------ -->
-            </div>
+             </div>
+                    
+                <!-- ------------Album------------ -->                 
+           
         </div>
-
+</div>
         <div class="container-fluid" style="margin-top:3%;">
             <div class="col-md-6 col-md-offset-3">
                 <label class="comment-label">Comments</label>
@@ -104,12 +105,7 @@
                     $('#comment2').show();
 
                 });
-                $(document).ready(function () {
-                    var count1 = $('div.album-slide').children().length;
-                    if (count1 > 1) {
-                        $('#album1').css("overflow-y", "scroll");
-                    }
-                });
+                
             </script>
 
 
