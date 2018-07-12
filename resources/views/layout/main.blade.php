@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('css/loading.css')}}"/>
+    <link rel="stylesheet" type="text/css" href={{asset('css/scrollbar.css')}}>
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/all.css')}}" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">

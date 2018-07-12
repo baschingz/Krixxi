@@ -1,4 +1,5 @@
 @extends('layout.main')
+
 @section('body')
     <div id="form1">
         <div ng-controller="PhotographerController" ng-init="init({{$id}})">
