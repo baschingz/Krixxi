@@ -29,21 +29,17 @@
 <header class="margin-bottom-menu">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <div class="col-md-2">
-                <div class="navbar-header">
-                    <a class="navbar-brand logo-size" href="menu">Krixxi</a>
+                <div class="col-sm-2">                    
+                        <a class="navbar-brand logo-size" href="menu">Krixxi</a>                    
+                </div>          
+                <div class="col-sm-10">
+                    <div class="text-right font-menu">
+                        <a class="glyphicon glyphicon-th-large font-menu2" href="menu"></a>
+                        <a class="glyphicon glyphicon-user font-menu2" href="#"></a>
+                        <a class="glyphicon glyphicon-comment font-menu2" href="#"></a>
+                        <a class="glyphicon glyphicon-search font-menu2" href="search"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-10">
-                <!-- <div class="navbar-flex">
-                    <ul class="nav navbar-nav navbar-ul navbar-right">
-                        <li><a class="glyphicon glyphicon-th-large" href="menu"></a></li>
-                        <li><a class="glyphicon glyphicon-user" href="#"></a></li>
-                        <li><a class="glyphicon glyphicon-comment" href="#"></a></li>
-                        <li><a class="glyphicon glyphicon-search" href="search"></a></li>
-                    </ul>
-                </div> -->
-            </div>
         </div>
     </nav>
 </header>
