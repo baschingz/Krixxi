@@ -48,3 +48,8 @@
     display: none;
     text-align: center;
   }
+  
+
+  .bg-loading{
+    background-color: white;
+  }
