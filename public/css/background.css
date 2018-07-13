@@ -163,6 +163,7 @@
   height: 300px;
   opacity: 0.7;
   vertical-align: middle;
+  object-fit: cover;
 }
 
 .photo-size{
@@ -209,4 +210,10 @@
  .font-topic-penname{
    color: #114c5e;
    font-size: 40px;
+ }
+
+ .test-li{
+   display: inline-block;
+   margin-bottom: 2%;
+   margin-right: 1%;
  }

@@ -44,7 +44,7 @@
 
             <!-- ------------Album------------ -->
 
-            <div class="container-fluid album-slide" id="album1" ng-controller="AlbumController"
+            <div class="container-fluid" id="album1" ng-controller="AlbumController"
                  ng-init="getImage({{$id}})">
                 <div class="card" style="border: none; padding-bottom:2%;" ng-repeat="imgs in Images">
                     <div class="row" ng-repeat="img in imgs">
@@ -57,17 +57,17 @@
                             </div>
                             <div class="col-sm-8">
                                 <h3 class="card-title"><% img[0].albumname %></h3>
-                                <div ng-repeat="imgall in img[1]">
-                                    <div ng-repeat="imgb64 in imgall" class="col-sm-2 border-img">
+                                <ul ng-repeat="imgall in img[1]">
+                                    <li ng-repeat="imgb64 in imgall" class="test-li">
                                         <img src="<% imgb64.imgBase64 %>" class="photo-size">
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
              </div>
-                    
+
                 <!-- ------------Album------------ -->                 
            
         </div>
@@ -112,7 +112,6 @@
                     $('#comment2').show();
 
                 });
-                
             </script>
 
 
