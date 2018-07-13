@@ -12,37 +12,34 @@
                 </div>
                 <div class="col-sm-8" style="padding-top:3%; font-size:18px;">
                     <div class="font-topic-penname"><% photographer[0].penname %></div>
-                    <div class="col-sm-6 row">
-                        <div> Detail : <span class="weight"><% photographer[0].description %></span></div>
+                    <div class="col-sm-5 row">
+                        <div><span class="font-photograph"> Detail : </span><span class="weight"><% photographer[0].description %></span></div>
                     </div>
                     <div class="col-sm-6" >
-                        <li class="glyphicon glyphicon-user"></li> Name     :  
+                        <li class="glyphicon glyphicon-user font-photograph"></li><span class="font-photograph"> Name     :  </span>
                         <span class="weight"> 
                             <%  photographer[0].fullname %>
                         </span>
                     </div>                    
                     <div class="col-sm-6">
-                        <li class="glyphicon glyphicon-globe"></li> Region    : 
+                        <li class="glyphicon glyphicon-globe font-photograph"></li><span class="font-photograph"> Region    : </span>
                         <span class="weight">   
                             <% photographer[0].name %>
                         </span>
                     </div>       
                     <div class="col-sm-6">
-                        <li class="glyphicon glyphicon-camera"></li> Half&nbsp;:  
+                        <li class="glyphicon glyphicon-camera font-photograph"></li><span class="font-photograph"> Half&nbsp;:  </span>
                         <span class="weight">   
                             <% photographer[0].parttime %>
                         </span>
                     </div>             
                     <div class="col-sm-6">
-                        <li class="glyphicon glyphicon-camera"></li> Full&nbsp;&nbsp;:  
+                        <li class="glyphicon glyphicon-camera font-photograph"></li><span class="font-photograph"> Full&nbsp;&nbsp;:  </span>
                         <span class="weight">   
                             <% photographer[0].fulltime %>
                         </span>
                     </div>
-                </div>
-                <div class="col-sm-3" style="padding-top:6.2em; font-size:18px;">
-                    
-                </div>                
+                </div>               
             </div>
 
             <!-- ------------Album------------ -->
