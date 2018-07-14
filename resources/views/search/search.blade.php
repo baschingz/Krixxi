@@ -70,7 +70,7 @@
                                                         <div class='input-group date col-sm-6 d'>
                                                             <input type="date" class="form-control  form-search  pull-left"
                                                                 id="datePicker" ng-model="searchValue.date"
-                                                                readonly="readonly">
+                                                                >
                                                                 <span class="input-group-addon">
                                                                     <span class="glyphicon glyphicon-calendar"></span>
                                                                 </span>
