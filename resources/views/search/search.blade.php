@@ -75,7 +75,6 @@
                                                                     <span class="glyphicon glyphicon-calendar"></span>
                                                                 </span>
                                                         </div>
-                                                        <input type="text" id="abc" value="">
                                                     </div>
                                                    
                                                 </div>
