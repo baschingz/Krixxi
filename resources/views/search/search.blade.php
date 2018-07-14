@@ -75,6 +75,7 @@
                                                                     <span class="glyphicon glyphicon-calendar"></span>
                                                                 </span>
                                                         </div>
+                                                        <input type="text" id="abc" value="">
                                                     </div>
                                                    
                                                 </div>
@@ -179,6 +180,15 @@
 
     
 </script>
+<script>
+function showDate(){
+    date1 = new Date ();
+    date = date1.getDate();
+    year = date1.getFullYear();
+    month = date1.getMonth();
 
+    document.getElementByid("abc").innerHTML= "date + " / " + month + " / "  + year;"
+}
+</script>
 
 @endsection
