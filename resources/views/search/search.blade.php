@@ -70,12 +70,16 @@
                                                                id="datePicker" ng-model="searchValue.date"
                                                                readonly="readonly">
                                                     </div>
+                                                   
                                                 </div>
+                                                
                                             </div>
                                         </div>
+                                        <div style="color:red; text-align:center" ng-model="alert"><% alert.message %></div>
                                         <!-- </div> -->
+                                        
                                     </div>
-                                    <button class="btnSearch" type="button" ng-click="searchPG(searchValue)">
+                                    <button class="btnSearch" id="btn1" type="button"  ng-click="searchPG(searchValue)">
                                         <i class="glyphicon glyphicon-search"></i>
                                         ค้นหา
                                     </button>
@@ -90,7 +94,7 @@
         </section>
         <setion>
             <!-- <div ng-if="check"> --> <!--card profilr-->
-            <div class="container">
+            <div class="container" id="bottom">
                 <div class="row">
                     <div class="col-lg-6 col-sm-6" ng-repeat="obj in photographyList">
                         <div class="card hovercard border-card">
@@ -99,7 +103,7 @@
                             </div>
                             <div class="avatar">
                                 <!-- <img alt="" src="https://avatars1.githubusercontent.com/u/11767240?v=3&s=400"> -->
-                                <a href="{{url('/')}}/photographer/<% obj.pg_id %>"> <img src="<% obj.profile_img%>" class="img-cover1" alt="<% obj.penname %>  "/></a>
+                                <a href="{{url('/')}}/photographer/<% obj.pg_id %>" target="_blank"> <img src="<% obj.profile_img%>" class="img-cover1" alt="<% obj.penname %>  "/></a>
                             </div>
                             <div class="info">
                                 <div class="title row">
@@ -147,8 +151,10 @@
             <!-- </div> -->
         </setion>
     </div>
-    
-<div id="loader1"></div>
+
+
+
+
 
 @endsection
 
@@ -158,8 +164,14 @@
     <script>
     $(function () {
         $('#div1').slideDown("slow");
-
+        // $("#bnt").click(function (){
+        //         $('html, body').animate({
+        //             scrollTop: $("#div2").offset().top
+        //         }, 2000);
+        //     });
     });
+
+    
 </script>
 
 

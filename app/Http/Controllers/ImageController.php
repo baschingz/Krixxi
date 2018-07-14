@@ -37,9 +37,9 @@ class ImageController extends Controller {
         $albumSize = sizeof($album);
         for($i=0;$i<$albumSize;$i++)
         {
-            $albumlist[] = array('albumcover'=>$album[$i]->cover,'albumname'=>$album[$i]->album_name);
-            for($j=$i;$j<sizeof($imageList);$j++){
-                if($imageList[$i]->album_id == $imageList[$j]->album_id){   
+            $albumlist[] = array('albumcover'=>$album[$i]->cover,'albumname'=>$album[$i]->album_name,'albuminspire'=>$album[$i]->inspiration);
+            for($j=0;$j<sizeof($imageList);$j++){
+                if($album[$i]->album_id == $imageList[$j]->album_id){   
                     $sum[] = array('imgBase64'=>$imageList[$j]->imagecenter_base64);                   
                 }                
             }

@@ -63,7 +63,7 @@ app.controller('AlbumController', function ($scope, $http) {
 
     $scope.getImage=  function (data) {
         data = data || null;
-            debugger;
+            // debugger;
           
             var id = data;
             var path = base_path + '/getImageList/' + id;
@@ -74,11 +74,11 @@ app.controller('AlbumController', function ($scope, $http) {
     
             $http(req).then(
                 function (response) {
-                    debugger;
+                    // debugger;
                     $scope.Images = response.data;
                 },
                 function (response) {
-                    debugger;
+                    // debugger;
                     alert('fail');
                 }
             );

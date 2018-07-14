@@ -3,9 +3,9 @@ var app = angular.module('myApp', [], function ($interpolateProvider) {
     $interpolateProvider.endSymbol('%>');
 });
 
-app.controller('SearchController', function ($scope, $http) {
+app.controller('SearchController', function ($scope, $http ,$location, $anchorScroll) {
 
-    $scope.photographyList = typeof searchValue !== "undefined" ? searchValue ? searchValue : null : null;
+    $scope.photographyList = typeof photographyList != "undefined" ? photographyList ? photographyList : null : null;
     $scope.searchValue = {
         location: 'L1',
         cost: '1',
@@ -19,15 +19,12 @@ app.controller('SearchController', function ($scope, $http) {
     $scope.service = typeof service != "undefined" ? service ? service : null : null;
     $scope.typeproject = typeof typeproject != "undefined" ? typeproject ? typeproject : null : null;
     $scope.check = false;
-    $scope.alert = null;
+    $scope.alert = {
+        message:''
+    };
     $scope.searchPG = function (e) {
-        debugger;
-        if(e.cost == "0")
-        {
-            // alert("กรุณาใส่ราคา");
-            
-            return false;
-        }
+        // debugger;
+       
         var path = base_path + '/photolist/search';
         var req = {
             method: 'POST',
@@ -41,21 +38,28 @@ app.controller('SearchController', function ($scope, $http) {
                 if( $scope.photographyList != null &&  $scope.photographyList.length != 0)
                 {
                     $scope.check = true;
+                    $scope.alert.message = '';
+                    gotoBottom();
                 }
                 else{
                     // debugger;
-                    alert("ไม่พบข้อมูลช่างภาพที่ค้นหา");
+                    // alert("ไม่พบข้อมูลช่างภาพที่ค้นหา");
+                    $scope.alert.message = '*****ไม่พบช่างภาพเลยจ้า*****';
                 }                
                                 
             },
             function (response) {
-                debugger;
+                // debugger;
                 alert('fail');
                 
             }
         );
     };
 
+    function gotoBottom() {
+        $location.hash('bottom');
+        $anchorScroll();
+      };
 
 
     $scope.init = function (page) {
@@ -63,7 +67,7 @@ app.controller('SearchController', function ($scope, $http) {
         path = base_path + '/getselect';
         // debugger;
         $http.get(path).then(function (response) {
-            debugger;
+            // debugger;
             $scope.location = response.data[0];
             $scope.cost = response.data[1];
             $scope.service = response.data[2];
@@ -74,7 +78,15 @@ app.controller('SearchController', function ($scope, $http) {
         });
     }
 
+
+
 });
+
+
+
+
+     
+       
 
 $(function () {
     $('#search').slideDown(1500);

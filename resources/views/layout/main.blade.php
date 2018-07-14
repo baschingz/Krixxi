@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Krixxi</title>
+    <style>
+    #contact
+        {
+            display: none;
+            background: white;
+            color: white;
+            padding: 90px;
+        }
+    </style>
 
     <link rel="icon" href="{{asset('image/icon/Icon-20.png')}}" type="image/x-icon"/>
     <!-- Fonts -->
@@ -31,14 +40,14 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
                 <div class="col-sm-2">                    
-                        <a class="navbar-brand logo-size" href="menu">Krixxi</a>                    
+                        <a class="navbar-brand logo-size" href="{{url('/')}}/menu">Krixxi</a>                    
                 </div>          
                 <div class="col-sm-10">
                     <div class="text-right font-menu">
-                        <a class="glyphicon glyphicon-th-large font-menu2" href="menu"></a>
+                        <a class="glyphicon glyphicon-th-large font-menu2" href="{{url('/')}}/menu"></a>
                         <a class="glyphicon glyphicon-user font-menu2" href="#"></a>
                         <a class="glyphicon glyphicon-comment font-menu2" href="#"></a>
-                        <a class="glyphicon glyphicon-search font-menu2" href="search"></a>
+                        <a class="glyphicon glyphicon-search font-menu2" href="{{url('/')}}/search"></a>
                     </div>
                 </div>
         </div>
