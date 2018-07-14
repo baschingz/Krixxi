@@ -35,8 +35,8 @@
                                                         <select class="form-control col-sm-6"
                                                                 ng-model="searchValue.cost">
 
-                                                            <option ng-repeat="c in cost" value="<% c.cost_id %>"><%
-                                                                c.detail %>
+                                                            <option ng-repeat="c in cost" value="<% c.cost_id %>">
+                                                            <%c.detail %>
                                                             </option>
 
                                                         </select>
@@ -48,8 +48,8 @@
                                                         <select class="form-control col-sm-6"
                                                                 ng-model="searchValue.service">
 
-                                                            <option ng-repeat="s in service" value="<% s.ser_id %>"><%
-                                                                s.detail %>
+                                                            <option ng-repeat="s in service" value="<% s.ser_id %>">
+                                                            <%s.detail %>
                                                             </option>
 
                                                         </select>

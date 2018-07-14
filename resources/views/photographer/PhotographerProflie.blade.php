@@ -3,43 +3,27 @@
 @section('body')
     <div id="form1">
         <div ng-controller="PhotographerController" ng-init="init({{$id}})">
-            <div class="card" style="margin-top:-5%;">
+        <div class="card" style="margin-top:-5%;">
                 <img class="card-img cover-img" src="<% photographer[0].cover_img %>">
             </div>
             <div class="container-fluid" style="padding-top:1%; padding-bottom:2%;">
-                <div class="col-sm-3 col-sm-offset-1">
+                <div class="col-sm-3 col-md-offset-1">
                     <img src="<% photographer[0].profile_img %>" class="photographer-avatar">
                 </div>
-                <div class="col-sm-8" style="padding-top:3%; font-size:18px;">
+                <div class="col-sm-7" style="padding-top:3%;">
                     <div class="font-topic-penname"><% photographer[0].penname %></div>
-                    <div class="col-sm-5 row">
-                        <div><span class="font-photograph"> Detail : </span><span class="weight"><% photographer[0].description %></span></div>
-                    </div>
-                    <div class="col-sm-6" >
-                        <li class="glyphicon glyphicon-user font-photograph"></li><span class="font-photograph"> Name     :  </span>
-                        <span class="weight"> 
-                            <%  photographer[0].fullname %>
-                        </span>
-                    </div>                    
-                    <div class="col-sm-6">
-                        <li class="glyphicon glyphicon-globe font-photograph"></li><span class="font-photograph"> Region    : </span>
-                        <span class="weight">   
-                            <% photographer[0].name %>
-                        </span>
-                    </div>       
-                    <div class="col-sm-6">
-                        <li class="glyphicon glyphicon-camera font-photograph"></li><span class="font-photograph"> Half&nbsp;:  </span>
-                        <span class="weight">   
-                            <% photographer[0].parttime %>
-                        </span>
-                    </div>             
-                    <div class="col-sm-6">
-                        <li class="glyphicon glyphicon-camera font-photograph"></li><span class="font-photograph"> Full&nbsp;&nbsp;:  </span>
-                        <span class="weight">   
-                            <% photographer[0].fulltime %>
-                        </span>
-                    </div>
-                </div>               
+                    <div style="font-size:18px;"><span class="font-photograph">Detail : </span><span class="weight"><% photographer[0].description %></span></div>
+                    <ul class="list-unstyled"  style="font-size:18px;">
+                        <li class="font-photograph glyphicon glyphicon-user"></li><span class="font-photograph">  Name     :  </span> <span class="weight"><%  photographer[0].fullname %> </span>
+                        <br>
+                        <li class="font-photograph glyphicon glyphicon-globe"></li><span class="font-photograph">  Region    :   </span> <span class="weight"><% photographer[0].name %> </span>
+                        <br>
+                        <li class="font-photograph glyphicon glyphicon-camera" aria-hidden="true"></li><span class="font-photograph">  Half    :  </span> <span class="weight"><% photographer[0].parttime %></span></span>
+                        <br>
+                        <li class="font-photograph glyphicon glyphicon-camera" aria-hidden="true"></li><span class="font-photograph">  Full    :  </span>  <span class="weight"><% photographer[0].fulltime %></span> </span>
+                        
+                    </ul>
+                </div>
             </div>
 
             <!-- ------------Album------------ -->
