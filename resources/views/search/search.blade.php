@@ -24,8 +24,8 @@
                                                         <label class="col-sm-5 control-label  font-style">สถานที่:</label>
                                                         <select class="form-control col-sm-7"
                                                                 ng-model="searchValue.location">
-                                                            <option ng-repeat="l in location" value="<% l.loc_id %>"><%
-                                                                l.name %>
+                                                            <option ng-repeat="l in location" value="<% l.loc_id %>">
+                                                            <% l.name %>
                                                             </option>
                                                         </select>
                                                     </div>
