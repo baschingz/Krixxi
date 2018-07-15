@@ -32,7 +32,7 @@ app.controller('SearchController', function ($scope, $http ,$location, $anchorSc
             data: e
         }
         $http(req).then(function (response) {
-                debugger;
+                // debugger;
                 // alert(response.data);
                 $scope.photographyList=response.data;
                 if( $scope.photographyList != null &&  $scope.photographyList.length != 0)
