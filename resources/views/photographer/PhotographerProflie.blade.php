@@ -25,23 +25,9 @@
                         <br>
                         <li class="font-photograph glyphicon glyphicon-camera" aria-hidden="true"></li><span class="font-photograph">  Full    :  </span>  <span class="weight"><% photographer[0].fulltime %></span> </span>
                         <br>
-                        <li class="" aria-hidden="true"></li><button class="btn-deal" data-toggle="modal" data-target="#myModal">Deal</button>
+                        <li class="" aria-hidden="true"></li><button class="btn-deal">Deal</button>
                     </ul>
 
-                </div>
-            </div>
-
-            <!---Modal---->
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content modal-deal">
-                        <div class="modal-body">
-                            <p>กรุณารอการติดต่อกลับจากช่างภาพ</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn-close-deal" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
                 </div>
             </div>
 
