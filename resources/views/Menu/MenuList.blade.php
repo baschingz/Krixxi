@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('main')
 @section('import')
     <script src="{{asset('js/slide/slide.js')}}"></script>
     <script src="{{asset('js/slide/jssor.slider-27.2.0.min.js')}}" type="text/javascript"></script>
@@ -14,7 +14,7 @@
             <div class="bg-slide">
                 <div id="jssor_1" class="slide-show-menu-page">
                     <!-- Loading Screen -->
-                    <div data-u="slides" class="slide-cursor">
+                        <div data-u="slides" class="slide-cursor">
                         <div data-p="170">
                             <img data-u="image" src="<% images[0].imgindex_base64 %>"/>
                             <div data-u="caption" data-t="3" class="font-index">Krixxi</div>
@@ -82,7 +82,7 @@
                     </div>
                     </a>
                     <div class="col-sm-5 card-menu2">
-                        <img src="{{asset('image/menu/lifestyle.jpg')}}" class="img-card-size" height="320px">
+                        <img src="{{asset('image/menu/lifestyle.jpg')}}"  class="img-card-size" height="320px">
                         <div class="overlay2">
                             <div class="text">ไลฟ์สไตล์</div>
                         </div>
@@ -99,13 +99,13 @@
                             <div class="text">ช่างภาพยอดนิยม</div>
                         </div>
                     </div>
-                </div>    
-            </div>               
+                </div>
+            </div>
         </div>
     </section>
 @endsection
 
 @section('script')
- 
+
     <script src="{{asset('js/Menu/MenuJS.js')}}"></script>
 @endsection
