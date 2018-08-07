@@ -65,7 +65,7 @@
                                                     </div>
 
                                                     <div class="col-sm-6 form-center1">
-                                                    
+
                                                         <label class="col-sm-6 control-label font-style">วัน-เวลา:</label>
                                                         <div class='input-group date col-sm-6 d'>
                                                             <input type="date" class="form-control  form-search  pull-left"
@@ -76,14 +76,14 @@
                                                                 </span>
                                                         </div>
                                                     </div>
-                                                   
+
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                         <div style="color:red; text-align:center" ng-model="alert"><% alert.message %></div>
                                         <!-- </div> -->
-                                        
+
                                     </div>
                                     <button class="btnSearch" id="btn1" type="button"  ng-click="searchPG(searchValue)">
                                         <i class="glyphicon glyphicon-search"></i>
@@ -102,20 +102,21 @@
             <!-- <div ng-if="check"> --> <!--card profilr-->
             <div class="container" id="bottom">
                 <div class="row">
-                    <div class="col-lg-6 col-sm-6" ng-repeat="obj in photographyList">
+                <div class="col-lg-6 col-sm-6" ng-repeat="obj in photographyList">
                         <div class="card hovercard border-card">
                             <div class="cardheader">
                                 <img src="<% obj.cover_img %>"/>
                             </div>
                             <div class="avatar">
                                 <!-- <img alt="" src="https://avatars1.githubusercontent.com/u/11767240?v=3&s=400"> -->
+                                <!-- <a href="{{url('/')}}/photographer/<% obj.pg_id %>" target="_blank"> <img src="<% obj.profile_img%>" class="img-cover1" alt="<% obj.penname %>  "/></a> -->
                                 <a href="{{url('/')}}/photographer/<% obj.pg_id %>" target="_blank"> <img src="<% obj.profile_img%>" class="img-cover1" alt="<% obj.penname %>  "/></a>
                             </div>
                             <div class="info">
                                 <div class="title row">
                                     <div class="col-sm-12">
                                         <i class="glyphicon glyphicon-camera"></i>
-                                        <% obj.penname %>       
+                                        <% obj.penname %>
                                     </div>
                                 </div>
                                 <div class="desc row">
@@ -147,11 +148,11 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="{{url('/')}}/photographer/<% obj.pg_id %>"> <button class="btnSeeProfile">ส่อง</button>  </a>
+                                <a href="{{url('/')}}/photographer/<% obj.pg_id %>" target="_blank"> <button class="btnSeeProfile">ดูโปรไฟล์</button>  </a>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <!-- </div> -->
@@ -177,7 +178,7 @@
         //     });
     });
 
-    
+
 </script>
 <script>
 function showDate(){

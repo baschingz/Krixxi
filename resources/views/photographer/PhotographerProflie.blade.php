@@ -1,5 +1,8 @@
 @extends('layout.main')
-
+@section('import')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+@endsection
 @section('body')
     <div id="form1">
         <div ng-controller="PhotographerController" ng-init="init({{$id}})">
@@ -8,7 +11,7 @@
             </div>
             <div class="container-fluid" style="padding-top:1%; padding-bottom:2%;">
                 <div class="col-sm-3 col-md-offset-1">
-                    <img src="<% photographer[0].profile_img %>" class="photographer-avatar">
+                    <img ng-src="<% photographer[0].profile_img %>" id="img" class="photographer-avatar">
                 </div>
                 <div class="col-sm-7" style="padding-top:3%;">
                     <div class="font-topic-penname"><% photographer[0].penname %></div>
@@ -21,8 +24,10 @@
                         <li class="font-photograph glyphicon glyphicon-camera" aria-hidden="true"></li><span class="font-photograph">  Half    :  </span> <span class="weight"><% photographer[0].parttime %></span></span>
                         <br>
                         <li class="font-photograph glyphicon glyphicon-camera" aria-hidden="true"></li><span class="font-photograph">  Full    :  </span>  <span class="weight"><% photographer[0].fulltime %></span> </span>
-                        
+                        <br>
+                        <li class="" aria-hidden="true"></li><button class="btn-deal">Deal</button>
                     </ul>
+
                 </div>
             </div>
 
@@ -39,12 +44,36 @@
                                     <div class="album-title"><% img[0].albumname %></div>
                                 </div>
                             </div>
+                            
                             <div class="col-sm-8">
                                 <h3 class="card-title"><% img[0].albumname %></h3>
                                 <ul ng-repeat="imgall in img[1]">
                                     <li ng-repeat="imgb64 in imgall" class="test-li">
-                                        <img src="<% imgb64.imgBase64 %>" class="photo-size">
-                                    </li>
+                                     
+                                    <div id="img<% img[0].albumname %><% $index+1 %>" class='modal'>
+                                        <span class='close' id="img<% img[0].albumname %><% $index+1 %>c" ><i class="glyphicon glyphicon-remove"></i></span>
+                                        <img class="modal-content" src='<% imgb64.imgBase64 %>'>
+                                    </div>  
+                                        <img src="<% imgb64.imgBase64 %>" onclick="show(this)" id="img<% img[0].albumname %><% $index+1 %>s"  class="photo-size"  >
+                                <script>
+                                    function show(e){
+                                        var getid = $(e).attr("id");
+                                        var id = getid.substring(0,getid.length - 1);
+                                        var myid = document.getElementById(id); 
+                                        myid.style.display="block";
+                                        var getspan = id+"c";
+                                        var span = document.getElementById(getspan);
+                                        span.onclick=function(){
+                                        myid.style.display="none";                                       
+                                        }
+                                        window.onclick = function(event) {
+                                            if (event.target == myid) {
+                                                myid.style.display = "none";
+                                            }
+                                        }
+                                    }
+                                </script>
+                                    </li>                                    
                                 </ul>
                             </div>
                         </div>
@@ -91,6 +120,7 @@
 
         @section('script')
             <script>
+                
                 $('#comment1').click(function () {
                     $('#comment1').hide();
                     $('#comment2').show();
