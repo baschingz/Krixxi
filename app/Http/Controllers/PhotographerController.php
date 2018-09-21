@@ -38,7 +38,6 @@ class PhotographerController extends Controller {
         // dd($loction);
         $myJSON = json_encode($photolist);       
         return $myJSON;
-       
     }
 
 }

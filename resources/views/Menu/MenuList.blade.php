@@ -1,4 +1,4 @@
-@extends('main')
+@extends('layout.main')
 @section('import')
     <script src="{{asset('js/slide/slide.js')}}"></script>
     <script src="{{asset('js/slide/jssor.slider-27.2.0.min.js')}}" type="text/javascript"></script>
