@@ -1,9 +1,4 @@
-var app = angular.module('myApp', [], function ($interpolateProvider) {
-    $interpolateProvider.startSymbol('<%');
-    $interpolateProvider.endSymbol('%>');
-});
-
-app.controller('SearchController', function ($scope, $http ,$location, $anchorScroll) {
+app.controller('SearchController', function ($scope, $http) {
 
     $scope.photographyList = typeof photographyList != "undefined" ? photographyList ? photographyList : null : null;
     $scope.searchValue = {

@@ -29,7 +29,7 @@ Route::get('search', function(){
 
 Route::get('imglist', 'ImageController@getImageList');
 
-Route::post('photolist/search','PhotographerController@getPhotographerBySearch');
+Route::post('getbysearch','PhotographerController@getPhotographerBySearch');
 
 Route::get('photolist/all', 'PhotographerController@getPhotographerList');
 

@@ -12,7 +12,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="containerSearch col-sm-10 col-sm-offset-1" hidden id="search">
+                            <div class="containerSearch col-sm-10 col-sm-offset-1"  id="search">
                                 <div class="panelSearch">
                                     <div class="panel-headingSearch form-center font-topic">ค้นหา</div>
                                     <div class="panel-body">

@@ -1,8 +1,3 @@
-var app = angular.module('myApp', [], function ($interpolateProvider) {
-    $interpolateProvider.startSymbol('<%');
-    $interpolateProvider.endSymbol('%>');
-});
-
 app.controller('MenuController', function ($scope, $http) {
     $scope.images = typeof photographers !== "undefined" ? photographers ? photographers : null : null;
     $scope.image2 = typeof photographer !== "undefined" ? photographer ? photographer : null : null;
